@@ -13,10 +13,10 @@
 		A970030620D2752200DC30D3 /* home.json in Resources */ = {isa = PBXBuildFile; fileRef = A970030520D2752200DC30D3 /* home.json */; };
 		A970030A20D275FA00DC30D3 /* KKMainTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = A970030920D275FA00DC30D3 /* KKMainTabBarController.m */; };
 		A970030D20D2764B00DC30D3 /* KKControllerFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = A970030C20D2764B00DC30D3 /* KKControllerFactory.m */; };
-		A970031520D27B7B00DC30D3 /* UIColor+KKAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = A970031420D27B7B00DC30D3 /* UIColor+KKAdd.m */; };
 		A970031820D27C2700DC30D3 /* KKConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = A970031720D27C2700DC30D3 /* KKConfiguration.m */; };
 		A970031F20D28C8600DC30D3 /* KKRecommendController.m in Sources */ = {isa = PBXBuildFile; fileRef = A970031E20D28C8600DC30D3 /* KKRecommendController.m */; };
 		A970032220D28EA900DC30D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A970032120D28EA900DC30D3 /* Assets.xcassets */; };
+		A970032B20D2B6D000DC30D3 /* UIColor+KKAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = A970032A20D2B6D000DC30D3 /* UIColor+KKAdd.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,15 +31,15 @@
 		A970030920D275FA00DC30D3 /* KKMainTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KKMainTabBarController.m; sourceTree = "<group>"; };
 		A970030B20D2764B00DC30D3 /* KKControllerFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKControllerFactory.h; sourceTree = "<group>"; };
 		A970030C20D2764B00DC30D3 /* KKControllerFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KKControllerFactory.m; sourceTree = "<group>"; };
-		A970030E20D276AE00DC30D3 /* KKPrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKPrefixHeader.pch; sourceTree = "<group>"; };
 		A970030F20D27A8F00DC30D3 /* KKGlobal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKGlobal.h; sourceTree = "<group>"; };
-		A970031320D27B7B00DC30D3 /* UIColor+KKAdd.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+KKAdd.h"; sourceTree = "<group>"; };
-		A970031420D27B7B00DC30D3 /* UIColor+KKAdd.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+KKAdd.m"; sourceTree = "<group>"; };
 		A970031620D27C2700DC30D3 /* KKConfiguration.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKConfiguration.h; sourceTree = "<group>"; };
 		A970031720D27C2700DC30D3 /* KKConfiguration.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KKConfiguration.m; sourceTree = "<group>"; };
 		A970031D20D28C8600DC30D3 /* KKRecommendController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKRecommendController.h; sourceTree = "<group>"; };
 		A970031E20D28C8600DC30D3 /* KKRecommendController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KKRecommendController.m; sourceTree = "<group>"; };
 		A970032120D28EA900DC30D3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A970032920D2B6D000DC30D3 /* UIColor+KKAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+KKAdd.h"; sourceTree = "<group>"; };
+		A970032A20D2B6D000DC30D3 /* UIColor+KKAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+KKAdd.m"; sourceTree = "<group>"; };
+		A970032D20D2B72300DC30D3 /* KKPrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKPrefixHeader.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,8 +72,7 @@
 		A955F19E20D1658800FFBB04 /* KKListKit */ = {
 			isa = PBXGroup;
 			children = (
-				A970031020D27B1400DC30D3 /* KKFoundation */,
-				A970030720D275D300DC30D3 /* KKTools */,
+				A970030720D275D300DC30D3 /* Utility */,
 				A970030420D274E800DC30D3 /* UIComponent */,
 				A970030220D274A700DC30D3 /* ViewControllers */,
 				A970030120D2736200DC30D3 /* Resources */,
@@ -81,7 +80,7 @@
 				A955F1A020D1658800FFBB04 /* AppDelegate.m */,
 				A955F1AE20D1658900FFBB04 /* main.m */,
 				A955F1AD20D1658900FFBB04 /* Info.plist */,
-				A970030E20D276AE00DC30D3 /* KKPrefixHeader.pch */,
+				A970032D20D2B72300DC30D3 /* KKPrefixHeader.pch */,
 			);
 			path = KKListKit;
 			sourceTree = "<group>";
@@ -121,9 +120,10 @@
 			path = UIComponent;
 			sourceTree = "<group>";
 		};
-		A970030720D275D300DC30D3 /* KKTools */ = {
+		A970030720D275D300DC30D3 /* Utility */ = {
 			isa = PBXGroup;
 			children = (
+				A970032320D2B62900DC30D3 /* KKKit */,
 				A970032020D28E3700DC30D3 /* KKAdaptorListKit */,
 				A970030B20D2764B00DC30D3 /* KKControllerFactory.h */,
 				A970030C20D2764B00DC30D3 /* KKControllerFactory.m */,
@@ -131,32 +131,7 @@
 				A970031720D27C2700DC30D3 /* KKConfiguration.m */,
 				A970030F20D27A8F00DC30D3 /* KKGlobal.h */,
 			);
-			path = KKTools;
-			sourceTree = "<group>";
-		};
-		A970031020D27B1400DC30D3 /* KKFoundation */ = {
-			isa = PBXGroup;
-			children = (
-				A970031120D27B2100DC30D3 /* KKKit */,
-			);
-			path = KKFoundation;
-			sourceTree = "<group>";
-		};
-		A970031120D27B2100DC30D3 /* KKKit */ = {
-			isa = PBXGroup;
-			children = (
-				A970031220D27B4B00DC30D3 /* UIColor */,
-			);
-			path = KKKit;
-			sourceTree = "<group>";
-		};
-		A970031220D27B4B00DC30D3 /* UIColor */ = {
-			isa = PBXGroup;
-			children = (
-				A970031320D27B7B00DC30D3 /* UIColor+KKAdd.h */,
-				A970031420D27B7B00DC30D3 /* UIColor+KKAdd.m */,
-			);
-			path = UIColor;
+			path = Utility;
 			sourceTree = "<group>";
 		};
 		A970031920D28C1300DC30D3 /* RecommendController */ = {
@@ -174,6 +149,32 @@
 			);
 			path = KKAdaptorListKit;
 			sourceTree = "<group>";
+		};
+		A970032320D2B62900DC30D3 /* KKKit */ = {
+			isa = PBXGroup;
+			children = (
+				A970032420D2B63800DC30D3 /* UIKit */,
+			);
+			path = KKKit;
+			sourceTree = "<group>";
+		};
+		A970032420D2B63800DC30D3 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				A970032520D2B66700DC30D3 /* UIColor */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		A970032520D2B66700DC30D3 /* UIColor */ = {
+			isa = PBXGroup;
+			children = (
+				A970032920D2B6D000DC30D3 /* UIColor+KKAdd.h */,
+				A970032A20D2B6D000DC30D3 /* UIColor+KKAdd.m */,
+			);
+			name = UIColor;
+			path = KKListKit/KKFoundation/KKKit/UIColor;
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -248,7 +249,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A955F1AF20D1658900FFBB04 /* main.m in Sources */,
-				A970031520D27B7B00DC30D3 /* UIColor+KKAdd.m in Sources */,
+				A970032B20D2B6D000DC30D3 /* UIColor+KKAdd.m in Sources */,
 				A970030A20D275FA00DC30D3 /* KKMainTabBarController.m in Sources */,
 				A970030D20D2764B00DC30D3 /* KKControllerFactory.m in Sources */,
 				A970031820D27C2700DC30D3 /* KKConfiguration.m in Sources */,
@@ -385,7 +386,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = U4Y38F724R;
 				GCC_PREFIX_HEADER = /Users/lv/Documents/GitHub/KKListKit/KKListKit/KKPrefixHeader.pch;
@@ -401,7 +401,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = U4Y38F724R;
 				GCC_PREFIX_HEADER = /Users/lv/Documents/GitHub/KKListKit/KKListKit/KKPrefixHeader.pch;

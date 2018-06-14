@@ -8,8 +8,12 @@
 
 #import <Foundation/Foundation.h>
 
+NS_ASSUME_NONNULL_BEGIN
+
 @interface KKControllerFactory : NSObject
 
 + (UIViewController *)mainTabBarController;
 
 @end
+
+NS_ASSUME_NONNULL_END
