@@ -3,7 +3,7 @@
 //  KKListKit
 //
 //  Created by LV on 2018/6/13.
-//  Copyright © 2018年 LV. All rights reserved.
+//  Copyright © 2018年 KK.inc. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
@@ -11,6 +11,7 @@
 
 int main(int argc, char * argv[]) {
     @autoreleasepool {
+        [KKConfiguration configureEnvrionment];
         return UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));
     }
 }

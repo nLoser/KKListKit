@@ -3,7 +3,7 @@
 //  KKListKit
 //
 //  Created by LV on 2018/6/13.
-//  Copyright © 2018年 LV. All rights reserved.
+//  Copyright © 2018年 KK.inc. All rights reserved.
 //
 
 #import "AppDelegate.h"
@@ -17,6 +17,10 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    self.window.rootViewController = [KKControllerFactory mainTabBarController];
+    self.window.backgroundColor = kLowerstColor;
+    [self.window makeKeyAndVisible];
     return YES;
 }
 

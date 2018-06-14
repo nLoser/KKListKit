@@ -3,29 +3,43 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 46;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		A955F1A120D1658800FFBB04 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A955F1A020D1658800FFBB04 /* AppDelegate.m */; };
-		A955F1A420D1658800FFBB04 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A955F1A320D1658800FFBB04 /* ViewController.m */; };
-		A955F1A720D1658800FFBB04 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A955F1A520D1658800FFBB04 /* Main.storyboard */; };
-		A955F1A920D1658900FFBB04 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A955F1A820D1658900FFBB04 /* Assets.xcassets */; };
 		A955F1AC20D1658900FFBB04 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A955F1AA20D1658900FFBB04 /* LaunchScreen.storyboard */; };
 		A955F1AF20D1658900FFBB04 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A955F1AE20D1658900FFBB04 /* main.m */; };
+		A970030620D2752200DC30D3 /* home.json in Resources */ = {isa = PBXBuildFile; fileRef = A970030520D2752200DC30D3 /* home.json */; };
+		A970030A20D275FA00DC30D3 /* KKMainTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = A970030920D275FA00DC30D3 /* KKMainTabBarController.m */; };
+		A970030D20D2764B00DC30D3 /* KKControllerFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = A970030C20D2764B00DC30D3 /* KKControllerFactory.m */; };
+		A970031520D27B7B00DC30D3 /* UIColor+KKAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = A970031420D27B7B00DC30D3 /* UIColor+KKAdd.m */; };
+		A970031820D27C2700DC30D3 /* KKConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = A970031720D27C2700DC30D3 /* KKConfiguration.m */; };
+		A970031F20D28C8600DC30D3 /* KKRecommendController.m in Sources */ = {isa = PBXBuildFile; fileRef = A970031E20D28C8600DC30D3 /* KKRecommendController.m */; };
+		A970032220D28EA900DC30D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A970032120D28EA900DC30D3 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A955F19C20D1658800FFBB04 /* KKListKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KKListKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A955F19F20D1658800FFBB04 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A955F1A020D1658800FFBB04 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		A955F1A220D1658800FFBB04 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		A955F1A320D1658800FFBB04 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		A955F1A620D1658800FFBB04 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		A955F1A820D1658900FFBB04 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A955F1AB20D1658900FFBB04 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A955F1AD20D1658900FFBB04 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A955F1AE20D1658900FFBB04 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A970030520D2752200DC30D3 /* home.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = home.json; sourceTree = "<group>"; };
+		A970030820D275FA00DC30D3 /* KKMainTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKMainTabBarController.h; sourceTree = "<group>"; };
+		A970030920D275FA00DC30D3 /* KKMainTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KKMainTabBarController.m; sourceTree = "<group>"; };
+		A970030B20D2764B00DC30D3 /* KKControllerFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKControllerFactory.h; sourceTree = "<group>"; };
+		A970030C20D2764B00DC30D3 /* KKControllerFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KKControllerFactory.m; sourceTree = "<group>"; };
+		A970030E20D276AE00DC30D3 /* KKPrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKPrefixHeader.pch; sourceTree = "<group>"; };
+		A970030F20D27A8F00DC30D3 /* KKGlobal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKGlobal.h; sourceTree = "<group>"; };
+		A970031320D27B7B00DC30D3 /* UIColor+KKAdd.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+KKAdd.h"; sourceTree = "<group>"; };
+		A970031420D27B7B00DC30D3 /* UIColor+KKAdd.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+KKAdd.m"; sourceTree = "<group>"; };
+		A970031620D27C2700DC30D3 /* KKConfiguration.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKConfiguration.h; sourceTree = "<group>"; };
+		A970031720D27C2700DC30D3 /* KKConfiguration.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KKConfiguration.m; sourceTree = "<group>"; };
+		A970031D20D28C8600DC30D3 /* KKRecommendController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKRecommendController.h; sourceTree = "<group>"; };
+		A970031E20D28C8600DC30D3 /* KKRecommendController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KKRecommendController.m; sourceTree = "<group>"; };
+		A970032120D28EA900DC30D3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,17 +72,107 @@
 		A955F19E20D1658800FFBB04 /* KKListKit */ = {
 			isa = PBXGroup;
 			children = (
+				A970031020D27B1400DC30D3 /* KKFoundation */,
+				A970030720D275D300DC30D3 /* KKTools */,
+				A970030420D274E800DC30D3 /* UIComponent */,
+				A970030220D274A700DC30D3 /* ViewControllers */,
+				A970030120D2736200DC30D3 /* Resources */,
 				A955F19F20D1658800FFBB04 /* AppDelegate.h */,
 				A955F1A020D1658800FFBB04 /* AppDelegate.m */,
-				A955F1A220D1658800FFBB04 /* ViewController.h */,
-				A955F1A320D1658800FFBB04 /* ViewController.m */,
-				A955F1A520D1658800FFBB04 /* Main.storyboard */,
-				A955F1A820D1658900FFBB04 /* Assets.xcassets */,
-				A955F1AA20D1658900FFBB04 /* LaunchScreen.storyboard */,
-				A955F1AD20D1658900FFBB04 /* Info.plist */,
 				A955F1AE20D1658900FFBB04 /* main.m */,
+				A955F1AD20D1658900FFBB04 /* Info.plist */,
+				A970030E20D276AE00DC30D3 /* KKPrefixHeader.pch */,
 			);
 			path = KKListKit;
+			sourceTree = "<group>";
+		};
+		A970030120D2736200DC30D3 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A970032120D28EA900DC30D3 /* Assets.xcassets */,
+				A970030520D2752200DC30D3 /* home.json */,
+				A955F1AA20D1658900FFBB04 /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		A970030220D274A700DC30D3 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				A970031920D28C1300DC30D3 /* RecommendController */,
+				A970030320D274C100DC30D3 /* MainTabController */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		A970030320D274C100DC30D3 /* MainTabController */ = {
+			isa = PBXGroup;
+			children = (
+				A970030820D275FA00DC30D3 /* KKMainTabBarController.h */,
+				A970030920D275FA00DC30D3 /* KKMainTabBarController.m */,
+			);
+			path = MainTabController;
+			sourceTree = "<group>";
+		};
+		A970030420D274E800DC30D3 /* UIComponent */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UIComponent;
+			sourceTree = "<group>";
+		};
+		A970030720D275D300DC30D3 /* KKTools */ = {
+			isa = PBXGroup;
+			children = (
+				A970032020D28E3700DC30D3 /* KKAdaptorListKit */,
+				A970030B20D2764B00DC30D3 /* KKControllerFactory.h */,
+				A970030C20D2764B00DC30D3 /* KKControllerFactory.m */,
+				A970031620D27C2700DC30D3 /* KKConfiguration.h */,
+				A970031720D27C2700DC30D3 /* KKConfiguration.m */,
+				A970030F20D27A8F00DC30D3 /* KKGlobal.h */,
+			);
+			path = KKTools;
+			sourceTree = "<group>";
+		};
+		A970031020D27B1400DC30D3 /* KKFoundation */ = {
+			isa = PBXGroup;
+			children = (
+				A970031120D27B2100DC30D3 /* KKKit */,
+			);
+			path = KKFoundation;
+			sourceTree = "<group>";
+		};
+		A970031120D27B2100DC30D3 /* KKKit */ = {
+			isa = PBXGroup;
+			children = (
+				A970031220D27B4B00DC30D3 /* UIColor */,
+			);
+			path = KKKit;
+			sourceTree = "<group>";
+		};
+		A970031220D27B4B00DC30D3 /* UIColor */ = {
+			isa = PBXGroup;
+			children = (
+				A970031320D27B7B00DC30D3 /* UIColor+KKAdd.h */,
+				A970031420D27B7B00DC30D3 /* UIColor+KKAdd.m */,
+			);
+			path = UIColor;
+			sourceTree = "<group>";
+		};
+		A970031920D28C1300DC30D3 /* RecommendController */ = {
+			isa = PBXGroup;
+			children = (
+				A970031D20D28C8600DC30D3 /* KKRecommendController.h */,
+				A970031E20D28C8600DC30D3 /* KKRecommendController.m */,
+			);
+			path = RecommendController;
+			sourceTree = "<group>";
+		};
+		A970032020D28E3700DC30D3 /* KKAdaptorListKit */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = KKAdaptorListKit;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -98,15 +202,17 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0940;
-				ORGANIZATIONNAME = LV;
+				ORGANIZATIONNAME = KK.inc.;
 				TargetAttributes = {
 					A955F19B20D1658800FFBB04 = {
 						CreatedOnToolsVersion = 9.4;
+						DevelopmentTeam = U4Y38F724R;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
 			buildConfigurationList = A955F19720D1658800FFBB04 /* Build configuration list for PBXProject "KKListKit" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -129,8 +235,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				A955F1AC20D1658900FFBB04 /* LaunchScreen.storyboard in Resources */,
-				A955F1A920D1658900FFBB04 /* Assets.xcassets in Resources */,
-				A955F1A720D1658800FFBB04 /* Main.storyboard in Resources */,
+				A970032220D28EA900DC30D3 /* Assets.xcassets in Resources */,
+				A970030620D2752200DC30D3 /* home.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,8 +247,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A955F1A420D1658800FFBB04 /* ViewController.m in Sources */,
 				A955F1AF20D1658900FFBB04 /* main.m in Sources */,
+				A970031520D27B7B00DC30D3 /* UIColor+KKAdd.m in Sources */,
+				A970030A20D275FA00DC30D3 /* KKMainTabBarController.m in Sources */,
+				A970030D20D2764B00DC30D3 /* KKControllerFactory.m in Sources */,
+				A970031820D27C2700DC30D3 /* KKConfiguration.m in Sources */,
+				A970031F20D28C8600DC30D3 /* KKRecommendController.m in Sources */,
 				A955F1A120D1658800FFBB04 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -150,14 +260,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		A955F1A520D1658800FFBB04 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A955F1A620D1658800FFBB04 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		A955F1AA20D1658900FFBB04 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -283,13 +385,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = U4Y38F724R;
+				GCC_PREFIX_HEADER = /Users/lv/Documents/GitHub/KKListKit/KKListKit/KKPrefixHeader.pch;
 				INFOPLIST_FILE = KKListKit/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.KK.KKListKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -300,13 +401,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = U4Y38F724R;
+				GCC_PREFIX_HEADER = /Users/lv/Documents/GitHub/KKListKit/KKListKit/KKPrefixHeader.pch;
 				INFOPLIST_FILE = KKListKit/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.KK.KKListKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
