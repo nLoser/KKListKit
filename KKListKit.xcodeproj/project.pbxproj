@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		640CD482A0C7D15C32D56A87 /* libPods-KKListKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 25DD016A2A2B5A145BEBBFC8 /* libPods-KKListKit.a */; };
 		A955F1A120D1658800FFBB04 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A955F1A020D1658800FFBB04 /* AppDelegate.m */; };
 		A955F1AC20D1658900FFBB04 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A955F1AA20D1658900FFBB04 /* LaunchScreen.storyboard */; };
 		A955F1AF20D1658900FFBB04 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A955F1AE20D1658900FFBB04 /* main.m */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		25DD016A2A2B5A145BEBBFC8 /* libPods-KKListKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-KKListKit.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A955F19C20D1658800FFBB04 /* KKListKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KKListKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A955F19F20D1658800FFBB04 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A955F1A020D1658800FFBB04 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -40,6 +42,8 @@
 		A970032920D2B6D000DC30D3 /* UIColor+KKAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+KKAdd.h"; sourceTree = "<group>"; };
 		A970032A20D2B6D000DC30D3 /* UIColor+KKAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+KKAdd.m"; sourceTree = "<group>"; };
 		A970032D20D2B72300DC30D3 /* KKPrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKPrefixHeader.pch; sourceTree = "<group>"; };
+		DE84B9B1FE53841A9DF14566 /* Pods-KKListKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KKListKit.release.xcconfig"; path = "Pods/Target Support Files/Pods-KKListKit/Pods-KKListKit.release.xcconfig"; sourceTree = "<group>"; };
+		EB4DC84968B98761D2DE408F /* Pods-KKListKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KKListKit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KKListKit/Pods-KKListKit.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,17 +51,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				640CD482A0C7D15C32D56A87 /* libPods-KKListKit.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7E10F8022B7D5BFA98BC5FFD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EB4DC84968B98761D2DE408F /* Pods-KKListKit.debug.xcconfig */,
+				DE84B9B1FE53841A9DF14566 /* Pods-KKListKit.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		A955F19320D1658800FFBB04 = {
 			isa = PBXGroup;
 			children = (
 				A955F19E20D1658800FFBB04 /* KKListKit */,
 				A955F19D20D1658800FFBB04 /* Products */,
+				7E10F8022B7D5BFA98BC5FFD /* Pods */,
+				BD5C2C1FA9EE7CFD56AC33A1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -176,6 +192,14 @@
 			path = KKListKit/KKFoundation/KKKit/UIColor;
 			sourceTree = SOURCE_ROOT;
 		};
+		BD5C2C1FA9EE7CFD56AC33A1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				25DD016A2A2B5A145BEBBFC8 /* libPods-KKListKit.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -183,6 +207,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A955F1B220D1658900FFBB04 /* Build configuration list for PBXNativeTarget "KKListKit" */;
 			buildPhases = (
+				380EE9DCA0A63D03AB18BB47 /* [CP] Check Pods Manifest.lock */,
 				A955F19820D1658800FFBB04 /* Sources */,
 				A955F19920D1658800FFBB04 /* Frameworks */,
 				A955F19A20D1658800FFBB04 /* Resources */,
@@ -242,6 +267,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		380EE9DCA0A63D03AB18BB47 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KKListKit-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A955F19820D1658800FFBB04 /* Sources */ = {
@@ -384,6 +430,7 @@
 		};
 		A955F1B320D1658900FFBB04 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EB4DC84968B98761D2DE408F /* Pods-KKListKit.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -399,6 +446,7 @@
 		};
 		A955F1B420D1658900FFBB04 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DE84B9B1FE53841A9DF14566 /* Pods-KKListKit.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
