@@ -6,12 +6,12 @@
 //  Copyright © 2018年 KK.inc. All rights reserved.
 //
 
-#import "KKSectionController.h"
+#import "KKListSectionController.h"
 
 FOUNDATION_EXTERN void KKSectionControllerPushThread(UIViewController *viewController, id collectionContext);
 FOUNDATION_EXTERN void KKSectionControllerPopThread(void);
 
-@interface KKSectionController()
+@interface KKListSectionController()
 
 @property (nonatomic, weak, nullable, readwrite) UIViewController *viewController;
 

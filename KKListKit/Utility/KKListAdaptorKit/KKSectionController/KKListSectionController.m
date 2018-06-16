@@ -6,8 +6,8 @@
 //  Copyright © 2018年 KK.inc. All rights reserved.
 //
 
-#import "KKSectionControllerInternal.h"
-#import "KKAssert.h"
+#import "KKListSectionControllerInternal.h"
+#import "KKListAssert.h"
 
 @interface KKSectionControllerThreadContext : NSObject
 @property (nonatomic, weak) UIViewController *viewController;
@@ -40,7 +40,7 @@ void KKSectionControllerPopThread(void) {
     [stack removeLastObject];
 }
 
-@implementation KKSectionController
+@implementation KKListSectionController
 
 #pragma mark - LifeCycle
 

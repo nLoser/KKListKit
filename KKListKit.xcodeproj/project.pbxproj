@@ -18,7 +18,7 @@
 		A970031F20D28C8600DC30D3 /* KKRecommendController.m in Sources */ = {isa = PBXBuildFile; fileRef = A970031E20D28C8600DC30D3 /* KKRecommendController.m */; };
 		A970032220D28EA900DC30D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A970032120D28EA900DC30D3 /* Assets.xcassets */; };
 		A970032B20D2B6D000DC30D3 /* UIColor+KKAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = A970032A20D2B6D000DC30D3 /* UIColor+KKAdd.m */; };
-		A9B5AF0F20D3CB6B008904AA /* KKSectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9B5AF0E20D3CB6B008904AA /* KKSectionController.m */; };
+		A9B5AF0F20D3CB6B008904AA /* KKListSectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9B5AF0E20D3CB6B008904AA /* KKListSectionController.m */; };
 		A9B5AF1220D3CB98008904AA /* KKListAdaptor.m in Sources */ = {isa = PBXBuildFile; fileRef = A9B5AF1120D3CB98008904AA /* KKListAdaptor.m */; };
 		A9B5AF1520D3CBCA008904AA /* TestDataSourceTool.m in Sources */ = {isa = PBXBuildFile; fileRef = A9B5AF1420D3CBCA008904AA /* TestDataSourceTool.m */; };
 		A9B5AF1920D3CC2E008904AA /* KKHomeListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A9B5AF1820D3CC2E008904AA /* KKHomeListModel.m */; };
@@ -46,16 +46,16 @@
 		A970032920D2B6D000DC30D3 /* UIColor+KKAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+KKAdd.h"; sourceTree = "<group>"; };
 		A970032A20D2B6D000DC30D3 /* UIColor+KKAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+KKAdd.m"; sourceTree = "<group>"; };
 		A970032D20D2B72300DC30D3 /* KKPrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKPrefixHeader.pch; sourceTree = "<group>"; };
-		A9B5AF0D20D3CB6B008904AA /* KKSectionController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKSectionController.h; sourceTree = "<group>"; };
-		A9B5AF0E20D3CB6B008904AA /* KKSectionController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KKSectionController.m; sourceTree = "<group>"; };
+		A9B5AF0D20D3CB6B008904AA /* KKListSectionController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKListSectionController.h; sourceTree = "<group>"; };
+		A9B5AF0E20D3CB6B008904AA /* KKListSectionController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KKListSectionController.m; sourceTree = "<group>"; };
 		A9B5AF1020D3CB98008904AA /* KKListAdaptor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKListAdaptor.h; sourceTree = "<group>"; };
 		A9B5AF1120D3CB98008904AA /* KKListAdaptor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KKListAdaptor.m; sourceTree = "<group>"; };
 		A9B5AF1320D3CBCA008904AA /* TestDataSourceTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestDataSourceTool.h; sourceTree = "<group>"; };
 		A9B5AF1420D3CBCA008904AA /* TestDataSourceTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestDataSourceTool.m; sourceTree = "<group>"; };
 		A9B5AF1720D3CC2E008904AA /* KKHomeListModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKHomeListModel.h; sourceTree = "<group>"; };
 		A9B5AF1820D3CC2E008904AA /* KKHomeListModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KKHomeListModel.m; sourceTree = "<group>"; };
-		A9B5AF1A20D3D352008904AA /* KKAssert.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKAssert.h; sourceTree = "<group>"; };
-		A9B5AF1C20D3DD09008904AA /* KKSectionControllerInternal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKSectionControllerInternal.h; sourceTree = "<group>"; };
+		A9B5AF1A20D3D352008904AA /* KKListAssert.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKListAssert.h; sourceTree = "<group>"; };
+		A9B5AF1C20D3DD09008904AA /* KKListSectionControllerInternal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKListSectionControllerInternal.h; sourceTree = "<group>"; };
 		A9B5AF2120D3E376008904AA /* KKListKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKListKit.h; sourceTree = "<group>"; };
 		DE84B9B1FE53841A9DF14566 /* Pods-KKListKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KKListKit.release.xcconfig"; path = "Pods/Target Support Files/Pods-KKListKit/Pods-KKListKit.release.xcconfig"; sourceTree = "<group>"; };
 		EB4DC84968B98761D2DE408F /* Pods-KKListKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KKListKit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KKListKit/Pods-KKListKit.debug.xcconfig"; sourceTree = "<group>"; };
@@ -182,7 +182,7 @@
 			children = (
 				A9B5AF1D20D3E30D008904AA /* KKListAdaptor */,
 				A9B5AF1B20D3DCE7008904AA /* KKSectionController */,
-				A9B5AF1A20D3D352008904AA /* KKAssert.h */,
+				A9B5AF1A20D3D352008904AA /* KKListAssert.h */,
 				A9B5AF2120D3E376008904AA /* KKListKit.h */,
 			);
 			path = KKListAdaptorKit;
@@ -226,9 +226,9 @@
 		A9B5AF1B20D3DCE7008904AA /* KKSectionController */ = {
 			isa = PBXGroup;
 			children = (
-				A9B5AF1C20D3DD09008904AA /* KKSectionControllerInternal.h */,
-				A9B5AF0D20D3CB6B008904AA /* KKSectionController.h */,
-				A9B5AF0E20D3CB6B008904AA /* KKSectionController.m */,
+				A9B5AF1C20D3DD09008904AA /* KKListSectionControllerInternal.h */,
+				A9B5AF0D20D3CB6B008904AA /* KKListSectionController.h */,
+				A9B5AF0E20D3CB6B008904AA /* KKListSectionController.m */,
 			);
 			path = KKSectionController;
 			sourceTree = "<group>";
@@ -354,7 +354,7 @@
 				A970031820D27C2700DC30D3 /* KKConfiguration.m in Sources */,
 				A970031F20D28C8600DC30D3 /* KKRecommendController.m in Sources */,
 				A955F1A120D1658800FFBB04 /* AppDelegate.m in Sources */,
-				A9B5AF0F20D3CB6B008904AA /* KKSectionController.m in Sources */,
+				A9B5AF0F20D3CB6B008904AA /* KKListSectionController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
