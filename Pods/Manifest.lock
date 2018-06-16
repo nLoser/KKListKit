@@ -4,17 +4,23 @@ PODS:
   - IGListKit/Default (3.4.0):
     - IGListKit/Diffing
   - IGListKit/Diffing (3.4.0)
+  - YYKit (1.0.9):
+    - YYKit/no-arc (= 1.0.9)
+  - YYKit/no-arc (1.0.9)
 
 DEPENDENCIES:
   - IGListKit (~> 3.0)
+  - YYKit
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - IGListKit
+    - YYKit
 
 SPEC CHECKSUMS:
   IGListKit: 7a5d788e9fb746bcd402baa8e8b24bc3bd2a5a07
+  YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
 
-PODFILE CHECKSUM: fb49624c6379f39ba9e2e0d0d70b87b82a9def4b
+PODFILE CHECKSUM: b7a8f5acd0eb73cfd2ab7cc100715c0d3ce4c69b
 
 COCOAPODS: 1.5.3

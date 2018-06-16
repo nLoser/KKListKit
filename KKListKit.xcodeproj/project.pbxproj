@@ -18,6 +18,10 @@
 		A970031F20D28C8600DC30D3 /* KKRecommendController.m in Sources */ = {isa = PBXBuildFile; fileRef = A970031E20D28C8600DC30D3 /* KKRecommendController.m */; };
 		A970032220D28EA900DC30D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A970032120D28EA900DC30D3 /* Assets.xcassets */; };
 		A970032B20D2B6D000DC30D3 /* UIColor+KKAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = A970032A20D2B6D000DC30D3 /* UIColor+KKAdd.m */; };
+		A9B5AF0F20D3CB6B008904AA /* KKSectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9B5AF0E20D3CB6B008904AA /* KKSectionController.m */; };
+		A9B5AF1220D3CB98008904AA /* KKListAdaptor.m in Sources */ = {isa = PBXBuildFile; fileRef = A9B5AF1120D3CB98008904AA /* KKListAdaptor.m */; };
+		A9B5AF1520D3CBCA008904AA /* TestDataSourceTool.m in Sources */ = {isa = PBXBuildFile; fileRef = A9B5AF1420D3CBCA008904AA /* TestDataSourceTool.m */; };
+		A9B5AF1920D3CC2E008904AA /* KKHomeListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A9B5AF1820D3CC2E008904AA /* KKHomeListModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +46,17 @@
 		A970032920D2B6D000DC30D3 /* UIColor+KKAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+KKAdd.h"; sourceTree = "<group>"; };
 		A970032A20D2B6D000DC30D3 /* UIColor+KKAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+KKAdd.m"; sourceTree = "<group>"; };
 		A970032D20D2B72300DC30D3 /* KKPrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKPrefixHeader.pch; sourceTree = "<group>"; };
+		A9B5AF0D20D3CB6B008904AA /* KKSectionController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKSectionController.h; sourceTree = "<group>"; };
+		A9B5AF0E20D3CB6B008904AA /* KKSectionController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KKSectionController.m; sourceTree = "<group>"; };
+		A9B5AF1020D3CB98008904AA /* KKListAdaptor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKListAdaptor.h; sourceTree = "<group>"; };
+		A9B5AF1120D3CB98008904AA /* KKListAdaptor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KKListAdaptor.m; sourceTree = "<group>"; };
+		A9B5AF1320D3CBCA008904AA /* TestDataSourceTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestDataSourceTool.h; sourceTree = "<group>"; };
+		A9B5AF1420D3CBCA008904AA /* TestDataSourceTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestDataSourceTool.m; sourceTree = "<group>"; };
+		A9B5AF1720D3CC2E008904AA /* KKHomeListModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKHomeListModel.h; sourceTree = "<group>"; };
+		A9B5AF1820D3CC2E008904AA /* KKHomeListModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KKHomeListModel.m; sourceTree = "<group>"; };
+		A9B5AF1A20D3D352008904AA /* KKAssert.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKAssert.h; sourceTree = "<group>"; };
+		A9B5AF1C20D3DD09008904AA /* KKSectionControllerInternal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKSectionControllerInternal.h; sourceTree = "<group>"; };
+		A9B5AF2120D3E376008904AA /* KKListKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKListKit.h; sourceTree = "<group>"; };
 		DE84B9B1FE53841A9DF14566 /* Pods-KKListKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KKListKit.release.xcconfig"; path = "Pods/Target Support Files/Pods-KKListKit/Pods-KKListKit.release.xcconfig"; sourceTree = "<group>"; };
 		EB4DC84968B98761D2DE408F /* Pods-KKListKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KKListKit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KKListKit/Pods-KKListKit.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -88,12 +103,15 @@
 		A955F19E20D1658800FFBB04 /* KKListKit */ = {
 			isa = PBXGroup;
 			children = (
+				A9B5AF1620D3CBE6008904AA /* Models */,
 				A970030720D275D300DC30D3 /* Utility */,
 				A970030420D274E800DC30D3 /* UIComponent */,
 				A970030220D274A700DC30D3 /* ViewControllers */,
 				A970030120D2736200DC30D3 /* Resources */,
 				A955F19F20D1658800FFBB04 /* AppDelegate.h */,
 				A955F1A020D1658800FFBB04 /* AppDelegate.m */,
+				A9B5AF1320D3CBCA008904AA /* TestDataSourceTool.h */,
+				A9B5AF1420D3CBCA008904AA /* TestDataSourceTool.m */,
 				A955F1AE20D1658900FFBB04 /* main.m */,
 				A955F1AD20D1658900FFBB04 /* Info.plist */,
 				A970032D20D2B72300DC30D3 /* KKPrefixHeader.pch */,
@@ -140,7 +158,7 @@
 			isa = PBXGroup;
 			children = (
 				A970032320D2B62900DC30D3 /* KKKit */,
-				A970032020D28E3700DC30D3 /* KKAdaptorListKit */,
+				A970032020D28E3700DC30D3 /* KKListAdaptorKit */,
 				A970030B20D2764B00DC30D3 /* KKControllerFactory.h */,
 				A970030C20D2764B00DC30D3 /* KKControllerFactory.m */,
 				A970031620D27C2700DC30D3 /* KKConfiguration.h */,
@@ -159,11 +177,15 @@
 			path = RecommendController;
 			sourceTree = "<group>";
 		};
-		A970032020D28E3700DC30D3 /* KKAdaptorListKit */ = {
+		A970032020D28E3700DC30D3 /* KKListAdaptorKit */ = {
 			isa = PBXGroup;
 			children = (
+				A9B5AF1D20D3E30D008904AA /* KKListAdaptor */,
+				A9B5AF1B20D3DCE7008904AA /* KKSectionController */,
+				A9B5AF1A20D3D352008904AA /* KKAssert.h */,
+				A9B5AF2120D3E376008904AA /* KKListKit.h */,
 			);
-			path = KKAdaptorListKit;
+			path = KKListAdaptorKit;
 			sourceTree = "<group>";
 		};
 		A970032320D2B62900DC30D3 /* KKKit */ = {
@@ -191,6 +213,34 @@
 			name = UIColor;
 			path = KKListKit/KKFoundation/KKKit/UIColor;
 			sourceTree = SOURCE_ROOT;
+		};
+		A9B5AF1620D3CBE6008904AA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A9B5AF1720D3CC2E008904AA /* KKHomeListModel.h */,
+				A9B5AF1820D3CC2E008904AA /* KKHomeListModel.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A9B5AF1B20D3DCE7008904AA /* KKSectionController */ = {
+			isa = PBXGroup;
+			children = (
+				A9B5AF1C20D3DD09008904AA /* KKSectionControllerInternal.h */,
+				A9B5AF0D20D3CB6B008904AA /* KKSectionController.h */,
+				A9B5AF0E20D3CB6B008904AA /* KKSectionController.m */,
+			);
+			path = KKSectionController;
+			sourceTree = "<group>";
+		};
+		A9B5AF1D20D3E30D008904AA /* KKListAdaptor */ = {
+			isa = PBXGroup;
+			children = (
+				A9B5AF1020D3CB98008904AA /* KKListAdaptor.h */,
+				A9B5AF1120D3CB98008904AA /* KKListAdaptor.m */,
+			);
+			path = KKListAdaptor;
+			sourceTree = "<group>";
 		};
 		BD5C2C1FA9EE7CFD56AC33A1 /* Frameworks */ = {
 			isa = PBXGroup;
@@ -294,13 +344,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9B5AF1220D3CB98008904AA /* KKListAdaptor.m in Sources */,
 				A955F1AF20D1658900FFBB04 /* main.m in Sources */,
 				A970032B20D2B6D000DC30D3 /* UIColor+KKAdd.m in Sources */,
 				A970030A20D275FA00DC30D3 /* KKMainTabBarController.m in Sources */,
+				A9B5AF1920D3CC2E008904AA /* KKHomeListModel.m in Sources */,
+				A9B5AF1520D3CBCA008904AA /* TestDataSourceTool.m in Sources */,
 				A970030D20D2764B00DC30D3 /* KKControllerFactory.m in Sources */,
 				A970031820D27C2700DC30D3 /* KKConfiguration.m in Sources */,
 				A970031F20D28C8600DC30D3 /* KKRecommendController.m in Sources */,
 				A955F1A120D1658800FFBB04 /* AppDelegate.m in Sources */,
+				A9B5AF0F20D3CB6B008904AA /* KKSectionController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,6 +491,7 @@
 				DEVELOPMENT_TEAM = U4Y38F724R;
 				GCC_PREFIX_HEADER = /Users/lv/Documents/GitHub/KKListKit/KKListKit/KKPrefixHeader.pch;
 				INFOPLIST_FILE = KKListKit/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.KK.KKListKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -453,6 +508,7 @@
 				DEVELOPMENT_TEAM = U4Y38F724R;
 				GCC_PREFIX_HEADER = /Users/lv/Documents/GitHub/KKListKit/KKListKit/KKPrefixHeader.pch;
 				INFOPLIST_FILE = KKListKit/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.KK.KKListKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
