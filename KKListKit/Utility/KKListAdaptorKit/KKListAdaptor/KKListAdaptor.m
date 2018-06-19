@@ -80,6 +80,7 @@
 
 #pragma mark - Private Method
 
+// 情境一：静默刷新（默认读取数据库，远端数据未及时同步）
 - (void)updateAfterPublicSettingChange {
     id<KKListAdaptorDataSource> dataSource = _dataSource;
     if (_collectionView != nil && dataSource != nil) {

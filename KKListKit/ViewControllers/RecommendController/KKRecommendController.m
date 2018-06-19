@@ -7,33 +7,72 @@
 //
 
 #import "KKRecommendController.h"
+#import "TestDataSourceTool.h"
 
-@interface KKRecommendController ()
+#import <IGListKit/IGListKit.h>
+
+@interface KKRecommendController () <IGListAdapterDataSource>
+
+@property (nonatomic, strong) IGListAdapter *adapter;
+@property (nonatomic, strong) UICollectionView *collectionView;
+@property (nonatomic, strong) NSArray *datas;
 
 @end
 
 @implementation KKRecommendController
 
+#pragma mark - LifeCycle
+
+- (instancetype)init {
+    if (self = [super init]) {
+        [self initSetup];
+    }
+    return self;
+}
+
+- (void)initSetup {
+    IGListAdapterUpdater *updater = [[IGListAdapterUpdater alloc] init];
+    self.adapter = [[IGListAdapter alloc] initWithUpdater:updater viewController:self];
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
     
     self.view.backgroundColor = kSimilarMainStyleColor;
+    [self.view addSubview:self.collectionView];
+    
+    self.adapter.dataSource = self;
+    self.adapter.collectionView = self.collectionView;
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)viewDidLayoutSubviews {
+    [super viewDidLayoutSubviews];
+    self.collectionView.frame = self.view.bounds;
 }
 
-/*
-#pragma mark - Navigation
+#pragma mark - Getter
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (UICollectionView *)collectionView {
+    if (!_collectionView) {
+        UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc] init];
+        _collectionView = [[UICollectionView alloc] initWithFrame:CGRectZero collectionViewLayout:layout];
+        [_collectionView setBackgroundColor:[UIColor clearColor]];
+    }
+    return _collectionView;
 }
-*/
+
+#pragma mark - IGListAdapterDataSource
+
+- (NSArray<id<IGListDiffable>> *)objectsForListAdapter:(IGListAdapter *)listAdapter {
+    return nil;
+}
+
+- (IGListSectionController *)listAdapter:(IGListAdapter *)listAdapter sectionControllerForObject:(id)object {
+    return nil;
+}
+
+- (UIView *)emptyViewForListAdapter:(IGListAdapter *)listAdapter {
+    return nil;
+}
 
 @end

@@ -24,6 +24,15 @@
 		A9B5AF1920D3CC2E008904AA /* KKHomeListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A9B5AF1820D3CC2E008904AA /* KKHomeListModel.m */; };
 		A9B5AF2720D8A8F7008904AA /* KKListAdaptor+UICollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = A9B5AF2620D8A8F7008904AA /* KKListAdaptor+UICollectionView.m */; };
 		A9B5AF2A20D8B99C008904AA /* KKListSectionMap.m in Sources */ = {isa = PBXBuildFile; fileRef = A9B5AF2920D8B99C008904AA /* KKListSectionMap.m */; };
+		A9B5AF3120D8F45C008904AA /* KKBannerSectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9B5AF3020D8F45C008904AA /* KKBannerSectionController.m */; };
+		A9B5AF3420D8F4C3008904AA /* KKFunctionItemSectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9B5AF3320D8F4C3008904AA /* KKFunctionItemSectionController.m */; };
+		A9B5AF3720D8F533008904AA /* KKDailyRecommendSectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9B5AF3620D8F533008904AA /* KKDailyRecommendSectionController.m */; };
+		A9B5AF3A20D8F572008904AA /* KKHotRecommendSectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9B5AF3920D8F572008904AA /* KKHotRecommendSectionController.m */; };
+		A9B5AF3D20D8F5C2008904AA /* KKAISectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9B5AF3C20D8F5C2008904AA /* KKAISectionController.m */; };
+		A9B5AF4020D8F5E5008904AA /* KKTodayReommendSectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9B5AF3F20D8F5E5008904AA /* KKTodayReommendSectionController.m */; };
+		A9B5AF4320D8F60B008904AA /* KKNewRecommendSectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9B5AF4220D8F60B008904AA /* KKNewRecommendSectionController.m */; };
+		A9B5AF4620D8F65D008904AA /* KKListRecommendSectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9B5AF4520D8F65D008904AA /* KKListRecommendSectionController.m */; };
+		A9B5AF4920D91323008904AA /* KKEmptySectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9B5AF4820D91323008904AA /* KKEmptySectionController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,6 +75,25 @@
 		A9B5AF2820D8B99C008904AA /* KKListSectionMap.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKListSectionMap.h; sourceTree = "<group>"; };
 		A9B5AF2920D8B99C008904AA /* KKListSectionMap.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KKListSectionMap.m; sourceTree = "<group>"; };
 		A9B5AF2B20D8DEE9008904AA /* KKListCollectionContext.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKListCollectionContext.h; sourceTree = "<group>"; };
+		A9B5AF2F20D8F45C008904AA /* KKBannerSectionController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKBannerSectionController.h; sourceTree = "<group>"; };
+		A9B5AF3020D8F45C008904AA /* KKBannerSectionController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KKBannerSectionController.m; sourceTree = "<group>"; };
+		A9B5AF3220D8F4C3008904AA /* KKFunctionItemSectionController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKFunctionItemSectionController.h; sourceTree = "<group>"; };
+		A9B5AF3320D8F4C3008904AA /* KKFunctionItemSectionController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KKFunctionItemSectionController.m; sourceTree = "<group>"; };
+		A9B5AF3520D8F533008904AA /* KKDailyRecommendSectionController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKDailyRecommendSectionController.h; sourceTree = "<group>"; };
+		A9B5AF3620D8F533008904AA /* KKDailyRecommendSectionController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KKDailyRecommendSectionController.m; sourceTree = "<group>"; };
+		A9B5AF3820D8F572008904AA /* KKHotRecommendSectionController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKHotRecommendSectionController.h; sourceTree = "<group>"; };
+		A9B5AF3920D8F572008904AA /* KKHotRecommendSectionController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KKHotRecommendSectionController.m; sourceTree = "<group>"; };
+		A9B5AF3B20D8F5C2008904AA /* KKAISectionController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKAISectionController.h; sourceTree = "<group>"; };
+		A9B5AF3C20D8F5C2008904AA /* KKAISectionController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KKAISectionController.m; sourceTree = "<group>"; };
+		A9B5AF3E20D8F5E5008904AA /* KKTodayReommendSectionController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKTodayReommendSectionController.h; sourceTree = "<group>"; };
+		A9B5AF3F20D8F5E5008904AA /* KKTodayReommendSectionController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KKTodayReommendSectionController.m; sourceTree = "<group>"; };
+		A9B5AF4120D8F60B008904AA /* KKNewRecommendSectionController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKNewRecommendSectionController.h; sourceTree = "<group>"; };
+		A9B5AF4220D8F60B008904AA /* KKNewRecommendSectionController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KKNewRecommendSectionController.m; sourceTree = "<group>"; };
+		A9B5AF4420D8F65D008904AA /* KKListRecommendSectionController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKListRecommendSectionController.h; sourceTree = "<group>"; };
+		A9B5AF4520D8F65D008904AA /* KKListRecommendSectionController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KKListRecommendSectionController.m; sourceTree = "<group>"; };
+		A9B5AF4720D91323008904AA /* KKEmptySectionController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKEmptySectionController.h; sourceTree = "<group>"; };
+		A9B5AF4820D91323008904AA /* KKEmptySectionController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KKEmptySectionController.m; sourceTree = "<group>"; };
+		A9B5AF4A20D91344008904AA /* KKHomeSectionControllerList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKHomeSectionControllerList.h; sourceTree = "<group>"; };
 		DE84B9B1FE53841A9DF14566 /* Pods-KKListKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KKListKit.release.xcconfig"; path = "Pods/Target Support Files/Pods-KKListKit/Pods-KKListKit.release.xcconfig"; sourceTree = "<group>"; };
 		EB4DC84968B98761D2DE408F /* Pods-KKListKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KKListKit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KKListKit/Pods-KKListKit.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -180,6 +208,9 @@
 		A970031920D28C1300DC30D3 /* RecommendController */ = {
 			isa = PBXGroup;
 			children = (
+				A9B5AF2E20D8F42E008904AA /* SectionController */,
+				A9B5AF2C20D8F41D008904AA /* Cell */,
+				A9B5AF2D20D8F41D008904AA /* View */,
 				A970031D20D28C8600DC30D3 /* KKRecommendController.h */,
 				A970031E20D28C8600DC30D3 /* KKRecommendController.m */,
 			);
@@ -264,6 +295,46 @@
 				A9B5AF2B20D8DEE9008904AA /* KKListCollectionContext.h */,
 			);
 			path = Protocol;
+			sourceTree = "<group>";
+		};
+		A9B5AF2C20D8F41D008904AA /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		A9B5AF2D20D8F41D008904AA /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A9B5AF2E20D8F42E008904AA /* SectionController */ = {
+			isa = PBXGroup;
+			children = (
+				A9B5AF2F20D8F45C008904AA /* KKBannerSectionController.h */,
+				A9B5AF3020D8F45C008904AA /* KKBannerSectionController.m */,
+				A9B5AF3220D8F4C3008904AA /* KKFunctionItemSectionController.h */,
+				A9B5AF3320D8F4C3008904AA /* KKFunctionItemSectionController.m */,
+				A9B5AF3520D8F533008904AA /* KKDailyRecommendSectionController.h */,
+				A9B5AF3620D8F533008904AA /* KKDailyRecommendSectionController.m */,
+				A9B5AF3820D8F572008904AA /* KKHotRecommendSectionController.h */,
+				A9B5AF3920D8F572008904AA /* KKHotRecommendSectionController.m */,
+				A9B5AF3B20D8F5C2008904AA /* KKAISectionController.h */,
+				A9B5AF3C20D8F5C2008904AA /* KKAISectionController.m */,
+				A9B5AF3E20D8F5E5008904AA /* KKTodayReommendSectionController.h */,
+				A9B5AF3F20D8F5E5008904AA /* KKTodayReommendSectionController.m */,
+				A9B5AF4120D8F60B008904AA /* KKNewRecommendSectionController.h */,
+				A9B5AF4220D8F60B008904AA /* KKNewRecommendSectionController.m */,
+				A9B5AF4420D8F65D008904AA /* KKListRecommendSectionController.h */,
+				A9B5AF4520D8F65D008904AA /* KKListRecommendSectionController.m */,
+				A9B5AF4720D91323008904AA /* KKEmptySectionController.h */,
+				A9B5AF4820D91323008904AA /* KKEmptySectionController.m */,
+				A9B5AF4A20D91344008904AA /* KKHomeSectionControllerList.h */,
+			);
+			path = SectionController;
 			sourceTree = "<group>";
 		};
 		BD5C2C1FA9EE7CFD56AC33A1 /* Frameworks */ = {
@@ -369,18 +440,27 @@
 			buildActionMask = 2147483647;
 			files = (
 				A9B5AF1220D3CB98008904AA /* KKListAdaptor.m in Sources */,
+				A9B5AF4320D8F60B008904AA /* KKNewRecommendSectionController.m in Sources */,
+				A9B5AF4020D8F5E5008904AA /* KKTodayReommendSectionController.m in Sources */,
 				A955F1AF20D1658900FFBB04 /* main.m in Sources */,
 				A970032B20D2B6D000DC30D3 /* UIColor+KKAdd.m in Sources */,
+				A9B5AF3D20D8F5C2008904AA /* KKAISectionController.m in Sources */,
 				A9B5AF2A20D8B99C008904AA /* KKListSectionMap.m in Sources */,
+				A9B5AF3A20D8F572008904AA /* KKHotRecommendSectionController.m in Sources */,
+				A9B5AF4620D8F65D008904AA /* KKListRecommendSectionController.m in Sources */,
 				A970030A20D275FA00DC30D3 /* KKMainTabBarController.m in Sources */,
 				A9B5AF1920D3CC2E008904AA /* KKHomeListModel.m in Sources */,
 				A9B5AF1520D3CBCA008904AA /* TestDataSourceTool.m in Sources */,
 				A970030D20D2764B00DC30D3 /* KKControllerFactory.m in Sources */,
+				A9B5AF4920D91323008904AA /* KKEmptySectionController.m in Sources */,
 				A970031820D27C2700DC30D3 /* KKConfiguration.m in Sources */,
 				A9B5AF2720D8A8F7008904AA /* KKListAdaptor+UICollectionView.m in Sources */,
+				A9B5AF3720D8F533008904AA /* KKDailyRecommendSectionController.m in Sources */,
+				A9B5AF3420D8F4C3008904AA /* KKFunctionItemSectionController.m in Sources */,
 				A970031F20D28C8600DC30D3 /* KKRecommendController.m in Sources */,
 				A955F1A120D1658800FFBB04 /* AppDelegate.m in Sources */,
 				A9B5AF0F20D3CB6B008904AA /* KKListSectionController.m in Sources */,
+				A9B5AF3120D8F45C008904AA /* KKBannerSectionController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
