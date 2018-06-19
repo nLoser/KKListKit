@@ -131,10 +131,9 @@
     
     KKSectionControllerPopThread();
     
-    //Reset map data
-    [map updateWithObjects:vaildObjects sectionController:sectionControllers];
-    
-    //Reload section controller
+    //Data:Reset map data
+    [map configurationWithObjects:vaildObjects sectionController:sectionControllers];
+    //UI:Reload section controller
     for (id object in updateObjects) {
         [[map sectionControllerForObject:object] didUpdateToObject:object];
     }
