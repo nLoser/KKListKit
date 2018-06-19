@@ -7,7 +7,7 @@
 //
 
 #import "KKListAdaptorInternal.h"
-#import "KKListAssert.h"
+#import "KKListSectionControllerInternal.h"
 
 @implementation KKListAdaptor
 
@@ -26,7 +26,7 @@
 - (void)setCollectionView:(UICollectionView *)collectionView {
     KKAssertMainThread();
     if (_collectionView != collectionView || _collectionView.dataSource != self) {
-        
+        //Dequeue reusable views
         _registerCellClass = [NSMutableSet new];
         _registerNibName = [NSMutableSet new];
         _registerSupplementaryViewIdentifiers = [NSMutableSet new];
@@ -105,14 +105,65 @@
     NSMutableArray<KKListSectionController *> *sectionControllers = [NSMutableArray new];
     NSMutableArray *vaildObjects = [NSMutableArray new];
     NSMutableSet *updateObjects = [NSMutableSet new];
+    KKListSectionMap *map = self.sectionMap;
     
     KKSectionControllerPushThread(self.viewController, self);
     
     for (id object in objects) {
+        KKListSectionController *sectionController = [map sectionControllerForObject:object];
+        if (!sectionController) {
+            sectionController = [dataSource listAdaptor:self sectionControllerForObject:object];
+        }
+        if (!sectionController) {
+            NSLog(@"WARNING: return a nil section controller by dataSource %@ for object %@.", dataSource, object);
+            continue;
+        }
+        sectionController.collectionContext = self;
+        sectionController.viewController = self.viewController;
         
+        const NSInteger oldSection = [map sectionForObject:object];
+        if (oldSection == NSNotFound || [map objectForSection:oldSection] != object) {
+            [updateObjects addObject:object];
+        }
+        [sectionControllers addObject:sectionController];
+        [vaildObjects addObject:object];
     }
     
     KKSectionControllerPopThread();
+    
+    //Reset map data
+    [map updateWithObjects:vaildObjects sectionController:sectionControllers];
+    
+    //Reload section controller
+    for (id object in updateObjects) {
+        [[map sectionControllerForObject:object] didUpdateToObject:object];
+    }
+    
+    NSInteger itemCount = 0;
+    for (KKListSectionController *sectionController in sectionControllers) {
+        itemCount += [sectionController numberOfItems];
+    }
+    [self updateEmptyViewShouldHide:itemCount > 0];
+}
+
+#pragma mark - KKListCollectionContext
+
+- (UICollectionViewCell *)cellForItemAtIndex:(NSInteger)index sectionController:(KKListSectionController *)sectionController {
+    return nil;
+}
+
+- (UICollectionViewCell *)dequeueReusableCellOfClass:(Class)class forSectionController:(KKListSectionController *)sectionController atIndex:(NSInteger)index {
+    return nil;
 }
 
 @end
+
+
+
+
+
+
+
+
+
+

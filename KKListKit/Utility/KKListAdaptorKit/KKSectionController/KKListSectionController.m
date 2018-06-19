@@ -11,7 +11,7 @@
 
 @interface KKSectionControllerThreadContext : NSObject
 @property (nonatomic, weak) UIViewController *viewController;
-@property (nonatomic, weak) id collectionContext;
+@property (nonatomic, weak) id <KKListCollectionContext> collectionContext;
 @end
 @implementation KKSectionControllerThreadContext
 @end

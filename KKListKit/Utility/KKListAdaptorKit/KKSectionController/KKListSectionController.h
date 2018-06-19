@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
+#import "KKListCollectionContext.h"
+
 NS_ASSUME_NONNULL_BEGIN
 
 @interface KKListSectionController : NSObject
@@ -30,7 +32,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, weak, nullable, readonly) UIViewController *viewController;
 
-@property (nonatomic, weak, nullable, readonly) id collectionContext;
+@property (nonatomic, weak, nullable, readonly) id <KKListCollectionContext> collectionContext;
 
 @property (nonatomic, assign, readonly) NSInteger section;
 

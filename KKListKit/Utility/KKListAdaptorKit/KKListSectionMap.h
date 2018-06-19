@@ -22,9 +22,13 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (NSInteger)sectionForSectionController:(id)section;
 
+- (NSInteger)sectionForObject:(id)object;
+
 - (nullable id)objectForSection:(NSInteger)section;
 
 #pragma mark - Data Operation
+
+- (void)updateWithObjects:(NSArray *)objects sectionController:(NSArray *)sectionControllers;
 
 - (void)updateObject:(id)object;
 

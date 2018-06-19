@@ -15,7 +15,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface KKListSectionController()
 
-@property (nonatomic, weak, nullable, readwrite) UIViewController *viewController;
+@property (nonatomic, weak, readwrite) UIViewController *viewController;
+
+@property (nonatomic, weak, readwrite) id <KKListCollectionContext> collectionContext;
 
 @property (nonatomic, assign, readwrite) NSInteger section;
 

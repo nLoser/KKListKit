@@ -65,6 +65,7 @@
 		A9B5AF2620D8A8F7008904AA /* KKListAdaptor+UICollectionView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "KKListAdaptor+UICollectionView.m"; sourceTree = "<group>"; };
 		A9B5AF2820D8B99C008904AA /* KKListSectionMap.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKListSectionMap.h; sourceTree = "<group>"; };
 		A9B5AF2920D8B99C008904AA /* KKListSectionMap.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KKListSectionMap.m; sourceTree = "<group>"; };
+		A9B5AF2B20D8DEE9008904AA /* KKListCollectionContext.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKListCollectionContext.h; sourceTree = "<group>"; };
 		DE84B9B1FE53841A9DF14566 /* Pods-KKListKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KKListKit.release.xcconfig"; path = "Pods/Target Support Files/Pods-KKListKit/Pods-KKListKit.release.xcconfig"; sourceTree = "<group>"; };
 		EB4DC84968B98761D2DE408F /* Pods-KKListKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KKListKit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KKListKit/Pods-KKListKit.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -260,6 +261,7 @@
 			isa = PBXGroup;
 			children = (
 				A9B5AF2320D8A10E008904AA /* KKListAdaptorDataSource.h */,
+				A9B5AF2B20D8DEE9008904AA /* KKListCollectionContext.h */,
 			);
 			path = Protocol;
 			sourceTree = "<group>";

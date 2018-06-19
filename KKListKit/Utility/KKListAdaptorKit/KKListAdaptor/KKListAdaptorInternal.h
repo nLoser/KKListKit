@@ -9,13 +9,13 @@
 #import "KKListAdaptor.h"
 #import "KKListAdaptor+UICollectionView.h"
 
-#import "KKListSectionControllerInternal.h"
-
 #import "KKListSectionMap.h"
+
+#import "KKListAssert.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface KKListAdaptor()
+@interface KKListAdaptor() <KKListCollectionContext>
 
 @property (nonatomic, strong, readonly) KKListSectionMap *sectionMap;
 
