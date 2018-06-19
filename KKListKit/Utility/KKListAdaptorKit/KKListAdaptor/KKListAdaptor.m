@@ -51,23 +51,31 @@
 
 - (nullable KKListSectionController *)sectionControllerForSection:(NSInteger)section {
     KKAssertMainThread();
-    return nil;
+    return [self.sectionMap sectionControllerForSection:section];
 }
 
 - (__kindof KKListSectionController * _Nullable )sectionControllerForObject:(id)object {
-    return nil;
+    KKAssertMainThread();
+    KKParameterAssert(object != nil);
+    return [self.sectionMap sectionControllerForObject:object];
 }
 
 - (NSInteger)sectionForSectionController:(KKListSectionController *)sectionController {
-    return 0;
-}
-
-- (nullable id)objectForSectionController:(KKListSectionController *)sectionController {
-    return nil;
+    KKAssertMainThread();
+    KKParameterAssert(sectionController != nil);
+    return [self.sectionMap sectionForSectionController:sectionController];
 }
 
 - (nullable id)objectForSection:(NSInteger)section {
-    return nil;
+    KKAssertMainThread();
+    return [self.sectionMap objectForSection:section];
+}
+
+- (nullable id)objectForSectionController:(KKListSectionController *)sectionController {
+    KKAssertMainThread();
+    KKParameterAssert(sectionController != nil);
+    NSInteger section = [self.sectionMap sectionForSectionController:sectionController];
+    return [self.sectionMap objectForSection:section];
 }
 
 #pragma mark - Private Method

@@ -11,9 +11,13 @@
 
 #import "KKListSectionControllerInternal.h"
 
+#import "KKListSectionMap.h"
+
 NS_ASSUME_NONNULL_BEGIN
 
 @interface KKListAdaptor()
+
+@property (nonatomic, strong, readonly) KKListSectionMap *sectionMap;
 
 @property (nonatomic, strong) NSMutableSet<Class> *registerCellClass;
 @property (nonatomic, strong) NSMutableSet<NSString *> *registerNibName;
