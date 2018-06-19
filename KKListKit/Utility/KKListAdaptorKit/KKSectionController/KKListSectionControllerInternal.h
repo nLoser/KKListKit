@@ -11,6 +11,8 @@
 FOUNDATION_EXTERN void KKSectionControllerPushThread(UIViewController *viewController, id collectionContext);
 FOUNDATION_EXTERN void KKSectionControllerPopThread(void);
 
+NS_ASSUME_NONNULL_BEGIN
+
 @interface KKListSectionController()
 
 @property (nonatomic, weak, nullable, readwrite) UIViewController *viewController;
@@ -18,3 +20,5 @@ FOUNDATION_EXTERN void KKSectionControllerPopThread(void);
 @property (nonatomic, assign, readwrite) NSInteger section;
 
 @end
+
+NS_ASSUME_NONNULL_END

@@ -73,4 +73,8 @@ void KKSectionControllerPopThread(void) {
     return CGSizeZero;
 }
 
+- (void)didUpdateToObject:(id)object {
+    //Need Override
+}
+
 @end

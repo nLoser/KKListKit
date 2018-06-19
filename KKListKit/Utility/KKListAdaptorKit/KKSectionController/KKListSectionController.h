@@ -24,6 +24,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 //TODO:delegate
 
+- (void)didUpdateToObject:(id)object;
+
 //Property
 
 @property (nonatomic, weak, nullable, readonly) UIViewController *viewController;
