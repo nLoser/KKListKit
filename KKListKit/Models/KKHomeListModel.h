@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <IGListDiff.h>
 
 @class IGListSectionController;
 
@@ -54,7 +55,7 @@ NS_ASSUME_NONNULL_BEGIN
 @end
 
 //Core Item Model
-@interface KKHomeModuleDataModel : KKHomeListModel
+@interface KKHomeModuleDataModel : KKHomeListModel <IGListDiffable>
 @property (nonatomic) NSInteger module_id;
 @property (nonatomic) NSInteger action_type;
 @property (nonatomic) NSInteger item_type;
@@ -69,7 +70,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface KKHomeListResultDataModel : KKHomeListModel
 @property (nonatomic) long long server_time;
-@property (nonatomic) id info_list;
+@property (nonatomic) NSArray <KKHomeModuleDataModel *> * info_list;
 @end
 
 @interface KKHomeListResultModel : KKHomeListModel

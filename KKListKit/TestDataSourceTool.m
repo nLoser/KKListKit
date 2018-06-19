@@ -8,6 +8,14 @@
 
 #import "TestDataSourceTool.h"
 
+#import <YYKit/NSObject+YYModel.h>
+
 @implementation TestDataSourceTool
+
++ (KKHomeListResultModel *)requestHomeListResult {
+    NSData *data = [NSData dataWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"home" ofType:@"json"]];
+    NSString *json = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingAllowFragments error:nil];
+    return [KKHomeListResultModel modelWithJSON:json];
+}
 
 @end

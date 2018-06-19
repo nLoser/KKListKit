@@ -33,6 +33,8 @@
 		A9B5AF4320D8F60B008904AA /* KKNewRecommendSectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9B5AF4220D8F60B008904AA /* KKNewRecommendSectionController.m */; };
 		A9B5AF4620D8F65D008904AA /* KKListRecommendSectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9B5AF4520D8F65D008904AA /* KKListRecommendSectionController.m */; };
 		A9B5AF4920D91323008904AA /* KKEmptySectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9B5AF4820D91323008904AA /* KKEmptySectionController.m */; };
+		A9B5AF5020D926F4008904AA /* LVInfinitelyCycleCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A9B5AF4C20D926F4008904AA /* LVInfinitelyCycleCollectionCell.m */; };
+		A9B5AF5120D926F4008904AA /* LVInfinitelyCycleView.m in Sources */ = {isa = PBXBuildFile; fileRef = A9B5AF4D20D926F4008904AA /* LVInfinitelyCycleView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -94,6 +96,10 @@
 		A9B5AF4720D91323008904AA /* KKEmptySectionController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKEmptySectionController.h; sourceTree = "<group>"; };
 		A9B5AF4820D91323008904AA /* KKEmptySectionController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KKEmptySectionController.m; sourceTree = "<group>"; };
 		A9B5AF4A20D91344008904AA /* KKHomeSectionControllerList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKHomeSectionControllerList.h; sourceTree = "<group>"; };
+		A9B5AF4C20D926F4008904AA /* LVInfinitelyCycleCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LVInfinitelyCycleCollectionCell.m; sourceTree = "<group>"; };
+		A9B5AF4D20D926F4008904AA /* LVInfinitelyCycleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LVInfinitelyCycleView.m; sourceTree = "<group>"; };
+		A9B5AF4E20D926F4008904AA /* LVInfinitelyCycleCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LVInfinitelyCycleCollectionCell.h; sourceTree = "<group>"; };
+		A9B5AF4F20D926F4008904AA /* LVInfinitelyCycleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LVInfinitelyCycleView.h; sourceTree = "<group>"; };
 		DE84B9B1FE53841A9DF14566 /* Pods-KKListKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KKListKit.release.xcconfig"; path = "Pods/Target Support Files/Pods-KKListKit/Pods-KKListKit.release.xcconfig"; sourceTree = "<group>"; };
 		EB4DC84968B98761D2DE408F /* Pods-KKListKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KKListKit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KKListKit/Pods-KKListKit.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -187,6 +193,7 @@
 		A970030420D274E800DC30D3 /* UIComponent */ = {
 			isa = PBXGroup;
 			children = (
+				A9B5AF4B20D926F4008904AA /* CycleBanner */,
 			);
 			path = UIComponent;
 			sourceTree = "<group>";
@@ -337,6 +344,17 @@
 			path = SectionController;
 			sourceTree = "<group>";
 		};
+		A9B5AF4B20D926F4008904AA /* CycleBanner */ = {
+			isa = PBXGroup;
+			children = (
+				A9B5AF4E20D926F4008904AA /* LVInfinitelyCycleCollectionCell.h */,
+				A9B5AF4C20D926F4008904AA /* LVInfinitelyCycleCollectionCell.m */,
+				A9B5AF4F20D926F4008904AA /* LVInfinitelyCycleView.h */,
+				A9B5AF4D20D926F4008904AA /* LVInfinitelyCycleView.m */,
+			);
+			path = CycleBanner;
+			sourceTree = "<group>";
+		};
 		BD5C2C1FA9EE7CFD56AC33A1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -441,6 +459,7 @@
 			files = (
 				A9B5AF1220D3CB98008904AA /* KKListAdaptor.m in Sources */,
 				A9B5AF4320D8F60B008904AA /* KKNewRecommendSectionController.m in Sources */,
+				A9B5AF5120D926F4008904AA /* LVInfinitelyCycleView.m in Sources */,
 				A9B5AF4020D8F5E5008904AA /* KKTodayReommendSectionController.m in Sources */,
 				A955F1AF20D1658900FFBB04 /* main.m in Sources */,
 				A970032B20D2B6D000DC30D3 /* UIColor+KKAdd.m in Sources */,
@@ -450,6 +469,7 @@
 				A9B5AF4620D8F65D008904AA /* KKListRecommendSectionController.m in Sources */,
 				A970030A20D275FA00DC30D3 /* KKMainTabBarController.m in Sources */,
 				A9B5AF1920D3CC2E008904AA /* KKHomeListModel.m in Sources */,
+				A9B5AF5020D926F4008904AA /* LVInfinitelyCycleCollectionCell.m in Sources */,
 				A9B5AF1520D3CBCA008904AA /* TestDataSourceTool.m in Sources */,
 				A970030D20D2764B00DC30D3 /* KKControllerFactory.m in Sources */,
 				A9B5AF4920D91323008904AA /* KKEmptySectionController.m in Sources */,

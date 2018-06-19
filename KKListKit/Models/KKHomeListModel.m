@@ -35,10 +35,11 @@
 @end
 
 @implementation KKHomeListResultDataModel
+
 + (NSDictionary *)modelContainerPropertyGenericClass {
-    return @{@"banners":[KKHomeBannerModel class],
-             @"topics":[KKHomeTopicModel class]};
+    return @{@"info_list":[KKHomeModuleDataModel class]};
 }
+
 @end
 
 @implementation KKHomeListResultModel
@@ -98,6 +99,21 @@
     }
     _sectionController = tempSectionController;
     return _sectionController;
+}
+
+//YYModel
++ (NSDictionary *)modelContainerPropertyGenericClass {
+    return @{@"banners":[KKHomeBannerModel class],
+             @"topics":[KKHomeTopicModel class]};
+}
+
+//IGListKitDiff
+- (id<NSObject>)diffIdentifier {
+    return self;
+}
+
+- (BOOL)isEqualToDiffableObject:(id<IGListDiffable>)object {
+    return self == object ? YES : [self isEqual:object];
 }
 
 @end

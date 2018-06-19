@@ -15,7 +15,7 @@
 
 @property (nonatomic, strong) IGListAdapter *adapter;
 @property (nonatomic, strong) UICollectionView *collectionView;
-@property (nonatomic, strong) NSArray *datas;
+@property (nonatomic, strong) NSMutableArray *datas;
 
 @end
 
@@ -33,21 +33,21 @@
 - (void)initSetup {
     IGListAdapterUpdater *updater = [[IGListAdapterUpdater alloc] init];
     self.adapter = [[IGListAdapter alloc] initWithUpdater:updater viewController:self];
+    self.datas = [NSMutableArray array];
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.view.backgroundColor = kSimilarMainStyleColor;
+    self.view.backgroundColor = kLowerstColor;
+    self.automaticallyAdjustsScrollViewInsets = NO;
+    
     [self.view addSubview:self.collectionView];
     
     self.adapter.dataSource = self;
     self.adapter.collectionView = self.collectionView;
-}
-
-- (void)viewDidLayoutSubviews {
-    [super viewDidLayoutSubviews];
-    self.collectionView.frame = self.view.bounds;
+    
+    [self reloadData];
 }
 
 #pragma mark - Getter
@@ -55,8 +55,10 @@
 - (UICollectionView *)collectionView {
     if (!_collectionView) {
         UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc] init];
-        _collectionView = [[UICollectionView alloc] initWithFrame:CGRectZero collectionViewLayout:layout];
-        [_collectionView setBackgroundColor:[UIColor clearColor]];
+        layout.scrollDirection = UICollectionViewScrollDirectionVertical;
+        _collectionView = [[UICollectionView alloc] initWithFrame:CGRectMake(0, 64, CGRectGetWidth(self.view.bounds), CGRectGetHeight(self.view.bounds) - 64 - 49) collectionViewLayout:layout];
+        _collectionView.contentSize = _collectionView.bounds.size;
+        [_collectionView setBackgroundColor:kLowerstColor];
     }
     return _collectionView;
 }
@@ -64,15 +66,34 @@
 #pragma mark - IGListAdapterDataSource
 
 - (NSArray<id<IGListDiffable>> *)objectsForListAdapter:(IGListAdapter *)listAdapter {
-    return nil;
+    return self.datas;
 }
 
 - (IGListSectionController *)listAdapter:(IGListAdapter *)listAdapter sectionControllerForObject:(id)object {
+    if ([object isKindOfClass:[KKHomeModuleDataModel class]]) {
+        return [object sectionController];
+    }
     return nil;
 }
 
 - (UIView *)emptyViewForListAdapter:(IGListAdapter *)listAdapter {
     return nil;
+}
+
+#pragma mark - Private Method
+
+- (void)reloadData {
+    dispatch_async(dispatch_get_global_queue(0, 0), ^{
+        sleep(2);
+        KKHomeListResultModel *result = [TestDataSourceTool requestHomeListResult];
+        self.datas = [NSMutableArray arrayWithArray:result.data.info_list];
+        dispatch_sync(dispatch_get_main_queue(), ^{
+            __weak typeof(self) weakSelf = self;
+            [self.adapter reloadDataWithCompletion:^(BOOL finished) {
+                //TODO:
+            }];
+        });
+    });
 }
 
 @end

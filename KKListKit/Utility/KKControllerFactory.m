@@ -24,7 +24,7 @@
 
 + (UIViewController *)recommendController {
     KKRecommendController *recommendController = [[KKRecommendController alloc] init];
-    recommendController.title = @"HOME";
+    recommendController.title = @"无限漫画";
     return recommendController;
 }
 
