@@ -14,13 +14,17 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface KKListSectionMap : NSObject
 
+- (instancetype)initWithObjectToSectionControllerMap:(NSMapTable *)mapTable NS_DESIGNATED_INITIALIZER;
+
+@property (nonatomic, strong, readonly) NSArray *objects;
+
 #pragma mark - Items
 
 - (nullable id)sectionControllerForSection:(NSInteger)section;
 
 - (nullable id)sectionControllerForObject:(id)object;
 
-- (NSInteger)sectionForSectionController:(id)section;
+- (NSInteger)sectionForSectionController:(id)sectionController;
 
 - (NSInteger)sectionForObject:(id)object;
 
@@ -28,11 +32,17 @@ NS_ASSUME_NONNULL_BEGIN
 
 #pragma mark - Data Operation
 
-- (void)updateWithObjects:(NSArray *)objects sectionController:(NSArray *)sectionControllers;
+- (void)configurationWithObjects:(NSArray *)objects
+               sectionController:(NSArray <KKListSectionController *> *)sectionControllers;
 
+/**
+ 更新Objects中需要更新的object
+ 
+ @param object 需要更新object
+ */
 - (void)updateObject:(id)object;
 
-- (void)updateSection:(NSInteger)section;
+- (void)reset;
 
 - (instancetype)init NS_UNAVAILABLE;
 
