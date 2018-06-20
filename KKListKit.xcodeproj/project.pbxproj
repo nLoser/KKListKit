@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		640CD482A0C7D15C32D56A87 /* libPods-KKListKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 25DD016A2A2B5A145BEBBFC8 /* libPods-KKListKit.a */; };
+		A94A590120DA06BF009A29E7 /* KKFunctionItemEntranceCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A94A590020DA06BF009A29E7 /* KKFunctionItemEntranceCell.m */; };
+		A94A590620DA0AD3009A29E7 /* UIView+GetRect.m in Sources */ = {isa = PBXBuildFile; fileRef = A94A590520DA0AD3009A29E7 /* UIView+GetRect.m */; };
+		A94A590920DA32BB009A29E7 /* KKDailyHorizontalListSectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = A94A590820DA32BB009A29E7 /* KKDailyHorizontalListSectionController.m */; };
+		A94A590C20DA33B5009A29E7 /* KKDailyHorizontailListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A94A590B20DA33B5009A29E7 /* KKDailyHorizontailListCell.m */; };
 		A955F1A120D1658800FFBB04 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A955F1A020D1658800FFBB04 /* AppDelegate.m */; };
 		A955F1AC20D1658900FFBB04 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A955F1AA20D1658900FFBB04 /* LaunchScreen.storyboard */; };
 		A955F1AF20D1658900FFBB04 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A955F1AE20D1658900FFBB04 /* main.m */; };
@@ -39,6 +43,15 @@
 
 /* Begin PBXFileReference section */
 		25DD016A2A2B5A145BEBBFC8 /* libPods-KKListKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-KKListKit.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A94A58FF20DA06BF009A29E7 /* KKFunctionItemEntranceCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKFunctionItemEntranceCell.h; sourceTree = "<group>"; };
+		A94A590020DA06BF009A29E7 /* KKFunctionItemEntranceCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KKFunctionItemEntranceCell.m; sourceTree = "<group>"; };
+		A94A590220DA0838009A29E7 /* KKHomeCellModelDataSource.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKHomeCellModelDataSource.h; sourceTree = "<group>"; };
+		A94A590420DA0AD3009A29E7 /* UIView+GetRect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+GetRect.h"; sourceTree = "<group>"; };
+		A94A590520DA0AD3009A29E7 /* UIView+GetRect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+GetRect.m"; sourceTree = "<group>"; };
+		A94A590720DA32BB009A29E7 /* KKDailyHorizontalListSectionController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKDailyHorizontalListSectionController.h; sourceTree = "<group>"; };
+		A94A590820DA32BB009A29E7 /* KKDailyHorizontalListSectionController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KKDailyHorizontalListSectionController.m; sourceTree = "<group>"; };
+		A94A590A20DA33B5009A29E7 /* KKDailyHorizontailListCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKDailyHorizontailListCell.h; sourceTree = "<group>"; };
+		A94A590B20DA33B5009A29E7 /* KKDailyHorizontailListCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KKDailyHorizontailListCell.m; sourceTree = "<group>"; };
 		A955F19C20D1658800FFBB04 /* KKListKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KKListKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A955F19F20D1658800FFBB04 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A955F1A020D1658800FFBB04 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -123,6 +136,15 @@
 				DE84B9B1FE53841A9DF14566 /* Pods-KKListKit.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		A94A590320DA0ACA009A29E7 /* UIView */ = {
+			isa = PBXGroup;
+			children = (
+				A94A590420DA0AD3009A29E7 /* UIView+GetRect.h */,
+				A94A590520DA0AD3009A29E7 /* UIView+GetRect.m */,
+			);
+			path = UIView;
 			sourceTree = "<group>";
 		};
 		A955F19320D1658800FFBB04 = {
@@ -249,6 +271,7 @@
 		A970032420D2B63800DC30D3 /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				A94A590320DA0ACA009A29E7 /* UIView */,
 				A970032520D2B66700DC30D3 /* UIColor */,
 			);
 			path = UIKit;
@@ -307,6 +330,10 @@
 		A9B5AF2C20D8F41D008904AA /* Cell */ = {
 			isa = PBXGroup;
 			children = (
+				A94A58FF20DA06BF009A29E7 /* KKFunctionItemEntranceCell.h */,
+				A94A590020DA06BF009A29E7 /* KKFunctionItemEntranceCell.m */,
+				A94A590A20DA33B5009A29E7 /* KKDailyHorizontailListCell.h */,
+				A94A590B20DA33B5009A29E7 /* KKDailyHorizontailListCell.m */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -327,6 +354,8 @@
 				A9B5AF3320D8F4C3008904AA /* KKFunctionItemSectionController.m */,
 				A9B5AF3520D8F533008904AA /* KKDailyRecommendSectionController.h */,
 				A9B5AF3620D8F533008904AA /* KKDailyRecommendSectionController.m */,
+				A94A590720DA32BB009A29E7 /* KKDailyHorizontalListSectionController.h */,
+				A94A590820DA32BB009A29E7 /* KKDailyHorizontalListSectionController.m */,
 				A9B5AF3820D8F572008904AA /* KKHotRecommendSectionController.h */,
 				A9B5AF3920D8F572008904AA /* KKHotRecommendSectionController.m */,
 				A9B5AF3B20D8F5C2008904AA /* KKAISectionController.h */,
@@ -340,6 +369,7 @@
 				A9B5AF4720D91323008904AA /* KKEmptySectionController.h */,
 				A9B5AF4820D91323008904AA /* KKEmptySectionController.m */,
 				A9B5AF4A20D91344008904AA /* KKHomeSectionControllerList.h */,
+				A94A590220DA0838009A29E7 /* KKHomeCellModelDataSource.h */,
 			);
 			path = SectionController;
 			sourceTree = "<group>";
@@ -457,6 +487,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A94A590920DA32BB009A29E7 /* KKDailyHorizontalListSectionController.m in Sources */,
 				A9B5AF1220D3CB98008904AA /* KKListAdaptor.m in Sources */,
 				A9B5AF4320D8F60B008904AA /* KKNewRecommendSectionController.m in Sources */,
 				A9B5AF5120D926F4008904AA /* LVInfinitelyCycleView.m in Sources */,
@@ -464,6 +495,7 @@
 				A955F1AF20D1658900FFBB04 /* main.m in Sources */,
 				A970032B20D2B6D000DC30D3 /* UIColor+KKAdd.m in Sources */,
 				A9B5AF3D20D8F5C2008904AA /* KKAISectionController.m in Sources */,
+				A94A590620DA0AD3009A29E7 /* UIView+GetRect.m in Sources */,
 				A9B5AF2A20D8B99C008904AA /* KKListSectionMap.m in Sources */,
 				A9B5AF3A20D8F572008904AA /* KKHotRecommendSectionController.m in Sources */,
 				A9B5AF4620D8F65D008904AA /* KKListRecommendSectionController.m in Sources */,
@@ -479,8 +511,10 @@
 				A9B5AF3420D8F4C3008904AA /* KKFunctionItemSectionController.m in Sources */,
 				A970031F20D28C8600DC30D3 /* KKRecommendController.m in Sources */,
 				A955F1A120D1658800FFBB04 /* AppDelegate.m in Sources */,
+				A94A590120DA06BF009A29E7 /* KKFunctionItemEntranceCell.m in Sources */,
 				A9B5AF0F20D3CB6B008904AA /* KKListSectionController.m in Sources */,
 				A9B5AF3120D8F45C008904AA /* KKBannerSectionController.m in Sources */,
+				A94A590C20DA33B5009A29E7 /* KKDailyHorizontailListCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

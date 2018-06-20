@@ -57,7 +57,6 @@
         UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc] init];
         layout.scrollDirection = UICollectionViewScrollDirectionVertical;
         _collectionView = [[UICollectionView alloc] initWithFrame:CGRectMake(0, 64, CGRectGetWidth(self.view.bounds), CGRectGetHeight(self.view.bounds) - 64 - 49) collectionViewLayout:layout];
-        _collectionView.contentSize = _collectionView.bounds.size;
         [_collectionView setBackgroundColor:kLowerstColor];
     }
     return _collectionView;
@@ -66,11 +65,13 @@
 #pragma mark - IGListAdapterDataSource
 
 - (NSArray<id<IGListDiffable>> *)objectsForListAdapter:(IGListAdapter *)listAdapter {
+    NSLog(@"%@",self.datas);
     return self.datas;
 }
 
 - (IGListSectionController *)listAdapter:(IGListAdapter *)listAdapter sectionControllerForObject:(id)object {
     if ([object isKindOfClass:[KKHomeModuleDataModel class]]) {
+        NSLog(@"%@",[object sectionController]);
         return [object sectionController];
     }
     return nil;
@@ -84,11 +85,9 @@
 
 - (void)reloadData {
     dispatch_async(dispatch_get_global_queue(0, 0), ^{
-        sleep(2);
         KKHomeListResultModel *result = [TestDataSourceTool requestHomeListResult];
         self.datas = [NSMutableArray arrayWithArray:result.data.info_list];
         dispatch_sync(dispatch_get_main_queue(), ^{
-            __weak typeof(self) weakSelf = self;
             [self.adapter reloadDataWithCompletion:^(BOOL finished) {
                 //TODO:
             }];

@@ -16,10 +16,6 @@ NS_ASSUME_NONNULL_BEGIN
 @interface KKHomeListModel : NSObject
 @end
 
-@interface KKHomeItemTagsModel : KKHomeListModel
-@property (nonatomic) NSArray <NSString *> *tags;
-@end
-
 @interface KKHomeItemLatestComicInfoModel : KKHomeListModel
 @property (nonatomic) NSInteger id;
 @property (nonatomic) NSString * title;
@@ -50,7 +46,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, copy) NSString *author_info;
 @property (nonatomic, copy) NSString *update_status;
 @property (nonatomic, copy) NSString *update_day;
-@property (nonatomic) KKHomeItemTagsModel *tags;
+@property (nonatomic, copy) NSArray <NSString *> *tags;
 @property (nonatomic, nullable) KKHomeItemLatestComicInfoModel *latest_comic_info;
 @end
 
@@ -64,6 +60,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, copy) NSString *ai_recommend_type;
 @property (nonatomic, copy, nullable) NSArray <KKHomeBannerModel *> *banners;
 @property (nonatomic, copy, nullable) NSArray <KKHomeTopicModel *> *topics;
+@property (nonatomic, copy, nullable) NSArray <KKHomeTopicModel *> *today_topics;
 //预计算
 @property (nonatomic) IGListSectionController *sectionController;
 @end

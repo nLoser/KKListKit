@@ -14,7 +14,7 @@
 
 @interface KKBannerSectionController ()
 
-@property (nonatomic, strong) NSArray<KKHomeBannerModel *> *dataArray;
+@property (nonatomic, strong) NSArray <KKHomeBannerModel *> *dataArray;
 @property (nonatomic, strong) LVInfinitelyCycleView *bannerView;
 
 @end
@@ -23,6 +23,10 @@
 
 - (void)didUpdateToObject:(KKHomeModuleDataModel *)object {
     self.dataArray = object.banners;
+}
+
+- (NSInteger)numberOfItems {
+    return 1;
 }
 
 - (CGSize)sizeForItemAtIndex:(NSInteger)index {

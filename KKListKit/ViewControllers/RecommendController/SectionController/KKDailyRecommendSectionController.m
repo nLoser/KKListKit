@@ -8,6 +8,34 @@
 
 #import "KKDailyRecommendSectionController.h"
 
+#import <IGListKit/IGListKit.h>
+
+#import "KKDailyHorizontailListCell.h"
+#import "KKDailyHorizontalListSectionController.h"
+
+#import "KKHomeListModel.h"
+
+@interface KKDailyRecommendSectionController ()
+
+@property (nonatomic, strong) KKHomeModuleDataModel *model;
+
+@end
+
 @implementation KKDailyRecommendSectionController
+
+- (void)didUpdateToObject:(id)object {
+    self.model = object;
+}
+
+- (CGSize)sizeForItemAtIndex:(NSInteger)index {
+    CGFloat width = [UIScreen mainScreen].bounds.size.width;
+    return CGSizeMake(width, width * 0.512);
+}
+
+- (UICollectionViewCell *)cellForItemAtIndex:(NSInteger)index {
+    UICollectionViewCell *cell = [self.collectionContext dequeueReusableCellOfClass:[UICollectionViewCell class] forSectionController:self atIndex:index];
+    cell.backgroundColor = [UIColor orangeColor];
+    return cell;
+}
 
 @end

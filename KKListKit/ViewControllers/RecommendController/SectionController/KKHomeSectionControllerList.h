@@ -16,7 +16,6 @@
 #import "KKNewRecommendSectionController.h"     ///< 新品推荐
 #import "KKListRecommendSectionController.h"    ///< 列表推进
 
-
 typedef NS_ENUM(NSInteger, kHomeStypleItemType) {
     kHomeStypleItemTypeBanner               = 1, ///< banner
     kHomeStypleItemTypeFunctionEntrance     = 2, ///< 固定入口
@@ -27,3 +26,9 @@ typedef NS_ENUM(NSInteger, kHomeStypleItemType) {
     kHomeStypleItemTypeHotRecommend         = 7, ///< 热门推荐
     kHomeStypleItemTypeNewRecommend         = 8  ///< 新作推荐
 };
+
+/*
+ 使用注意事项
+ 1.既然生命sectionController，就必须要实现dataSource的代理方法
+ 
+ */

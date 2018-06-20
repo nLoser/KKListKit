@@ -11,4 +11,6 @@
 
 #import "KKConfiguration.h"
 
+#import "UIView+GetRect.h"
+
 #endif

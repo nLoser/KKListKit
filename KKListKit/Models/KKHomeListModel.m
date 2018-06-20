@@ -16,17 +16,17 @@
 
 @end
 
-@implementation KKHomeItemTagsModel
-
-@end
-
 @implementation KKHomeBannerModel
 
 @end
 
 @implementation KKHomeTopicModel
+//YY
 + (nullable NSDictionary<NSString *, id> *)modelCustomPropertyMapper {
     return @{@"descriptionString":@"description"};
+}
++ (NSDictionary *)modelContainerPropertyGenericClass {
+    return @{@"tags":[NSString class]};
 }
 @end
 
@@ -104,7 +104,9 @@
 //YYModel
 + (NSDictionary *)modelContainerPropertyGenericClass {
     return @{@"banners":[KKHomeBannerModel class],
-             @"topics":[KKHomeTopicModel class]};
+             @"topics":[KKHomeTopicModel class],
+             @"today_topics":[KKHomeTopicModel class]
+             };
 }
 
 //IGListKitDiff
