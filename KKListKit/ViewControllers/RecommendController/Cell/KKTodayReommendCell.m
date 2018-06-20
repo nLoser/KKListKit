@@ -118,16 +118,20 @@
 
 - (void)updateToObject:(KKHomeTopicModel *)object index:(NSInteger)index {
     self.object = object;
-    [self.rankCoverView todayRankComicName:object.title comicRank:index];
     
-    UIBezierPath *beizerPath = [UIBezierPath bezierPathWithRoundedRect:self.contentView.bounds cornerRadius:8];
-    _backgroundLayer.path = beizerPath.CGPath;
-    
-    BOOL hideCoverFlag = NO;
+    BOOL hideCoverFlag = YES;
     if (index > 3) {
-        hideCoverFlag = YES;
-        
+        _comicNameLabel.text = object.title;
+        UIBezierPath *beizerPath = [UIBezierPath bezierPathWithRoundedRect:self.contentView.bounds cornerRadius:8];
+        _backgroundLayer.path = beizerPath.CGPath;
+    } else {
+        [_rankCoverView todayRankComicName:object.title comicRank:index];
+        [_comicImageView setImageWithURL:[NSURL URLWithString:object.cover_image_url] placeholder:nil options:YYWebImageOptionProgressive manager:nil progress:nil transform:nil completion:^(UIImage * _Nullable image, NSURL * _Nonnull url, YYWebImageFromType from, YYWebImageStage stage, NSError * _Nullable error) {
+            
+        }];
+        hideCoverFlag = NO;
     }
+    
     _comicImageView.hidden = hideCoverFlag;
     _rankCoverView.hidden = hideCoverFlag;
     _comicNameLabel.hidden = !hideCoverFlag;
@@ -140,8 +144,7 @@
         UIBezierPath *beizerPath = [UIBezierPath bezierPathWithRoundedRect:CGRectZero cornerRadius:12];
         _backgroundLayer = [CAShapeLayer layer];
         _backgroundLayer.path = beizerPath.CGPath;
-        //_backgroundLayer.fillColor = kLowerstColor.CGColor;
-        _backgroundLayer.fillColor = kKKRandomColor.CGColor;
+        _backgroundLayer.fillColor = kMainGrayColor.CGColor;
     }
     return _backgroundLayer;
 }
@@ -164,7 +167,7 @@
     if (!_comicNameLabel) {
         _comicNameLabel = [UILabel new];
         _comicNameLabel.textAlignment = NSTextAlignmentCenter;
-        _comicNameLabel.textColor = kTextLightColor;
+        _comicNameLabel.textColor = kTextDarkColor;
         _comicNameLabel.font = [UIFont systemFontOfSize:14];
     }
     return _comicNameLabel;

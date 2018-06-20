@@ -11,8 +11,9 @@
 #import "KKHomeListModel.h"
 
 #import "KKTodayReommendCell.h"
+#import "KKTitleSectionHeadReusableView.h"
 
-@interface KKTodayReommendSectionController () {
+@interface KKTodayReommendSectionController () <IGListSupplementaryViewSource> {
     CGFloat _itemGrap;
     CGFloat _itemRankWidth;
     CGFloat _itemRankHeight;
@@ -41,8 +42,26 @@
     _itemRankSmallWidth = (_itemRankWidth - _itemGrap)/2.f;
     _itemRankSmallHeight = 32;
     
-    self.inset = UIEdgeInsetsMake(10, 10, 10, 10);
+    self.inset = UIEdgeInsetsMake(_itemGrap, _itemGrap, _itemGrap, _itemGrap);
     self.minimumLineSpacing = _itemGrap;
+    
+    self.supplementaryViewSource = self;
+}
+
+#pragma mark - IGListSupplementaryViewSource
+
+- (NSArray<NSString *> *)supportedElementKinds {
+    return @[UICollectionElementKindSectionHeader];
+}
+
+- (CGSize)sizeForSupplementaryViewOfKind:(NSString *)elementKind atIndex:(NSInteger)index {
+    return CGSizeMake([UIScreen mainScreen].bounds.size.width, 32 + 6); //64 + 12
+}
+
+- (UICollectionReusableView *)viewForSupplementaryElementOfKind:(NSString *)elementKind atIndex:(NSInteger)index {
+    KKTitleSectionHeadReusableView *view = [self.collectionContext dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader forSectionController:self class:[KKTitleSectionHeadReusableView class] atIndex:index];
+    view.title = self.model.title;
+    return view;
 }
 
 #pragma mark - DataSource
