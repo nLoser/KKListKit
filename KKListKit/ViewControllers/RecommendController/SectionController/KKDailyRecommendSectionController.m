@@ -33,8 +33,8 @@
 }
 
 - (UICollectionViewCell *)cellForItemAtIndex:(NSInteger)index {
-    UICollectionViewCell *cell = [self.collectionContext dequeueReusableCellOfClass:[UICollectionViewCell class] forSectionController:self atIndex:index];
-    cell.backgroundColor = [UIColor orangeColor];
+    UICollectionViewCell *cell = [self.collectionContext dequeueReusableCellOfClass:[UICollectionViewCell class]  forSectionController:self atIndex:index];
+    cell.backgroundColor = [UIColor whiteColor];
     return cell;
 }
 

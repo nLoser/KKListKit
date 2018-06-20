@@ -12,6 +12,7 @@
 		A94A590620DA0AD3009A29E7 /* UIView+GetRect.m in Sources */ = {isa = PBXBuildFile; fileRef = A94A590520DA0AD3009A29E7 /* UIView+GetRect.m */; };
 		A94A590920DA32BB009A29E7 /* KKDailyHorizontalListSectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = A94A590820DA32BB009A29E7 /* KKDailyHorizontalListSectionController.m */; };
 		A94A590C20DA33B5009A29E7 /* KKDailyHorizontailListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A94A590B20DA33B5009A29E7 /* KKDailyHorizontailListCell.m */; };
+		A94A590F20DA483B009A29E7 /* KKBannerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A94A590E20DA483B009A29E7 /* KKBannerCell.m */; };
 		A955F1A120D1658800FFBB04 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A955F1A020D1658800FFBB04 /* AppDelegate.m */; };
 		A955F1AC20D1658900FFBB04 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A955F1AA20D1658900FFBB04 /* LaunchScreen.storyboard */; };
 		A955F1AF20D1658900FFBB04 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A955F1AE20D1658900FFBB04 /* main.m */; };
@@ -52,6 +53,8 @@
 		A94A590820DA32BB009A29E7 /* KKDailyHorizontalListSectionController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KKDailyHorizontalListSectionController.m; sourceTree = "<group>"; };
 		A94A590A20DA33B5009A29E7 /* KKDailyHorizontailListCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKDailyHorizontailListCell.h; sourceTree = "<group>"; };
 		A94A590B20DA33B5009A29E7 /* KKDailyHorizontailListCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KKDailyHorizontailListCell.m; sourceTree = "<group>"; };
+		A94A590D20DA483B009A29E7 /* KKBannerCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKBannerCell.h; sourceTree = "<group>"; };
+		A94A590E20DA483B009A29E7 /* KKBannerCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KKBannerCell.m; sourceTree = "<group>"; };
 		A955F19C20D1658800FFBB04 /* KKListKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KKListKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A955F19F20D1658800FFBB04 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A955F1A020D1658800FFBB04 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -334,6 +337,8 @@
 				A94A590020DA06BF009A29E7 /* KKFunctionItemEntranceCell.m */,
 				A94A590A20DA33B5009A29E7 /* KKDailyHorizontailListCell.h */,
 				A94A590B20DA33B5009A29E7 /* KKDailyHorizontailListCell.m */,
+				A94A590D20DA483B009A29E7 /* KKBannerCell.h */,
+				A94A590E20DA483B009A29E7 /* KKBannerCell.m */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -513,6 +518,7 @@
 				A955F1A120D1658800FFBB04 /* AppDelegate.m in Sources */,
 				A94A590120DA06BF009A29E7 /* KKFunctionItemEntranceCell.m in Sources */,
 				A9B5AF0F20D3CB6B008904AA /* KKListSectionController.m in Sources */,
+				A94A590F20DA483B009A29E7 /* KKBannerCell.m in Sources */,
 				A9B5AF3120D8F45C008904AA /* KKBannerSectionController.m in Sources */,
 				A94A590C20DA33B5009A29E7 /* KKDailyHorizontailListCell.m in Sources */,
 			);

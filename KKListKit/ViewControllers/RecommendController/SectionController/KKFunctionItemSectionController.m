@@ -20,13 +20,7 @@
 
 @implementation KKFunctionItemSectionController
 
-- (instancetype)init {
-    self = [super init];
-    if (self) {
-        
-    }
-    return self;
-}
+#pragma mark - DataSource
 
 - (void)didUpdateToObject:(id)object {
     self.datas = object;

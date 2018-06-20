@@ -28,7 +28,8 @@ typedef NS_ENUM(NSInteger, kHomeStypleItemType) {
 };
 
 /*
- 使用注意事项
- 1.既然生命sectionController，就必须要实现dataSource的代理方法
+ 使用这个框架
+ 1.创建sectionController，必须要实现dataSource的代理方法
+ 2.使用注册Cell的时候，一个UICollectionCell必须要对应一个reuseIdentifier
  
  */

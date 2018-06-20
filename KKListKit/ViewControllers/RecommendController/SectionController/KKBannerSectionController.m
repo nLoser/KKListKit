@@ -8,25 +8,35 @@
 
 #import "KKBannerSectionController.h"
 
-#import "LVInfinitelyCycleView.h"
-
+#import "KKBannerCell.h"
 #import "KKHomeListModel.h"
 
 @interface KKBannerSectionController ()
 
-@property (nonatomic, strong) NSArray <KKHomeBannerModel *> *dataArray;
-@property (nonatomic, strong) LVInfinitelyCycleView *bannerView;
+@property (nonatomic, assign) BOOL needRefresh;
+@property (nonatomic, strong) NSMutableArray <NSString *> *dataArray;
 
 @end
 
 @implementation KKBannerSectionController
 
-- (void)didUpdateToObject:(KKHomeModuleDataModel *)object {
-    self.dataArray = object.banners;
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        _needRefresh = NO;
+        _dataArray = [NSMutableArray array];
+    }
+    return self;
 }
 
-- (NSInteger)numberOfItems {
-    return 1;
+#pragma mark - DataSource
+
+- (void)didUpdateToObject:(KKHomeModuleDataModel *)object {
+    self.needRefresh = YES;
+    for (KKHomeBannerModel *model in object.banners) {
+        [_dataArray addObject:model.pic];
+    }
 }
 
 - (CGSize)sizeForItemAtIndex:(NSInteger)index {
@@ -35,24 +45,12 @@
 }
 
 - (UICollectionViewCell *)cellForItemAtIndex:(NSInteger)index {
-    UICollectionViewCell *cell = [self.collectionContext dequeueReusableCellOfClass:[UICollectionViewCell class] forSectionController:self atIndex:index];
-    if (!_bannerView) {
-        _bannerView = [[LVInfinitelyCycleView alloc] initWithFrame:cell.contentView.bounds];
-        _bannerView.backgroundColor = kMainStyleColor;
-        [cell addSubview:_bannerView];
-        [self reloadData];
+    KKBannerCell *cell = [self.collectionContext dequeueReusableCellOfClass:[KKBannerCell class] forSectionController:self atIndex:index];
+    if (self.needRefresh) {
+        [cell.bannerView setBannerIamgeUrlGroup:self.dataArray];
+        self.needRefresh = NO;
     }
     return cell;
-}
-
-#pragma mark - Private Method
-
-- (void)reloadData {
-    NSMutableArray *array = [NSMutableArray array];
-    for (KKHomeBannerModel *model in self.dataArray) {
-        [array addObject:model.pic];
-    }
-    [_bannerView setBannerIamgeUrlGroup:array];
 }
 
 @end

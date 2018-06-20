@@ -29,6 +29,12 @@
     return self;
 }
 
+- (void)prepareForReuse {
+    [super prepareForReuse];
+    [self.functionItemIamgeView cancelCurrentImageRequest];
+    self.model = nil;
+}
+
 #pragma mark - Getter
 
 - (UIImageView *)functionItemIamgeView {
@@ -42,11 +48,9 @@
 
 #pragma mark - KKHomeCellModelDataSource
 
-- (void)updateToObject:(id)object {
-    if ([object isKindOfClass:[KKHomeBannerModel class]]) {
-        self.model = object;
-        [self.functionItemIamgeView setImageURL:[NSURL URLWithString:self.model.pic]];
-    }
+- (void)updateToObject:(KKHomeBannerModel *)object {
+    self.model = object;
+    [self.functionItemIamgeView setImageURL:[NSURL URLWithString:self.model.pic]];
 }
 
 @end
