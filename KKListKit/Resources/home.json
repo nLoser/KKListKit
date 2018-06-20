@@ -1047,7 +1047,28 @@
                                  },
                                  "comic_count": 1,
                                  "source": "自有"
-                                 }, {
+                                 },
+                                 {
+                                 "id": 3,
+                                 "title": "一条狗一条",
+                                 "description": "【连载中】人与狗互换，将会发生什么爆笑情节？《一条狗》连载中~",
+                                 "cover_image_url": "http://p9he7x1dr.bkt.clouddn.com/xm/image/180525b2ZBhk3k2.webp",
+                                 "vertical_image_url": "http://p9he7x1dr.bkt.clouddn.com/xm/image/180525Ptpil7p5H.webp",
+                                 "status": "published",
+                                 "author_info": "Kula哈2",
+                                 "update_status": "连载中",
+                                 "update_day": "(每日更新)",
+                                 "favourite": false,
+                                 "popularity": 0,
+                                 "tags": ["清新"],
+                                 "latest_comic_info": {
+                                 "id": 5945,
+                                 "title": "测试2",
+                                 "created_at": 1528686213000
+                                 },
+                                 "comic_count": 1,
+                                 "source": "自有"
+                                 },{
                                  "id": 1,
                                  "title": "执子之爪1",
                                  "description": "【连载中】当狮子男遇上白羊女，还有一只猫的萌萌爱情故事啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊1",

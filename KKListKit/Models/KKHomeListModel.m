@@ -28,6 +28,21 @@
 + (NSDictionary *)modelContainerPropertyGenericClass {
     return @{@"tags":[NSString class]};
 }
+//预计算
+- (NSString *)tagString {
+    if (_tagString) {
+        return _tagString;
+    }
+    _tagString = @"漫画";
+    if (_tags.count > 0) {
+        NSMutableString *string = [NSMutableString string];
+        for (NSInteger i = 0 ; i < _tags.count; i ++) {
+            [string appendFormat:@"%@%@",_tags[i],i > 0 ? @" ":@""];
+        }
+        _tagString = string;
+    }
+    return _tagString;
+}
 @end
 
 @implementation KKHomeItemLatestComicInfoModel
@@ -90,7 +105,9 @@
         }
             break;
         case kHomeStypleItemTypeNewRecommend: {
-            tempSectionController = [KKNewRecommendSectionController new];
+            //tempSectionController = [KKNewRecommendSectionController new];
+            //NOTE:测试
+            tempSectionController = [KKListRecommendSectionController new];
         }
             break;
         default:

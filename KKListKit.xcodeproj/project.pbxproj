@@ -15,6 +15,7 @@
 		A94A590F20DA483B009A29E7 /* KKBannerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A94A590E20DA483B009A29E7 /* KKBannerCell.m */; };
 		A94A591220DA500C009A29E7 /* KKTodayReommendCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A94A591120DA500C009A29E7 /* KKTodayReommendCell.m */; };
 		A94A591820DA667F009A29E7 /* KKTitleSectionHeadReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = A94A591720DA667F009A29E7 /* KKTitleSectionHeadReusableView.m */; };
+		A94A591B20DA6FF5009A29E7 /* KKRecommendComicCardCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A94A591A20DA6FF5009A29E7 /* KKRecommendComicCardCell.m */; };
 		A955F1A120D1658800FFBB04 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A955F1A020D1658800FFBB04 /* AppDelegate.m */; };
 		A955F1AC20D1658900FFBB04 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A955F1AA20D1658900FFBB04 /* LaunchScreen.storyboard */; };
 		A955F1AF20D1658900FFBB04 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A955F1AE20D1658900FFBB04 /* main.m */; };
@@ -44,7 +45,6 @@
 		25DD016A2A2B5A145BEBBFC8 /* libPods-KKListKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-KKListKit.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A94A58FF20DA06BF009A29E7 /* KKFunctionItemEntranceCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKFunctionItemEntranceCell.h; sourceTree = "<group>"; };
 		A94A590020DA06BF009A29E7 /* KKFunctionItemEntranceCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KKFunctionItemEntranceCell.m; sourceTree = "<group>"; };
-		A94A590220DA0838009A29E7 /* KKHomeCellModelDataSource.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKHomeCellModelDataSource.h; sourceTree = "<group>"; };
 		A94A590420DA0AD3009A29E7 /* UIView+GetRect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+GetRect.h"; sourceTree = "<group>"; };
 		A94A590520DA0AD3009A29E7 /* UIView+GetRect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+GetRect.m"; sourceTree = "<group>"; };
 		A94A590720DA32BB009A29E7 /* KKDailyHorizontalListSectionController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKDailyHorizontalListSectionController.h; sourceTree = "<group>"; };
@@ -57,6 +57,8 @@
 		A94A591120DA500C009A29E7 /* KKTodayReommendCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KKTodayReommendCell.m; sourceTree = "<group>"; };
 		A94A591620DA667F009A29E7 /* KKTitleSectionHeadReusableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKTitleSectionHeadReusableView.h; sourceTree = "<group>"; };
 		A94A591720DA667F009A29E7 /* KKTitleSectionHeadReusableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KKTitleSectionHeadReusableView.m; sourceTree = "<group>"; };
+		A94A591920DA6FF5009A29E7 /* KKRecommendComicCardCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKRecommendComicCardCell.h; sourceTree = "<group>"; };
+		A94A591A20DA6FF5009A29E7 /* KKRecommendComicCardCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KKRecommendComicCardCell.m; sourceTree = "<group>"; };
 		A955F19C20D1658800FFBB04 /* KKListKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KKListKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A955F19F20D1658800FFBB04 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A955F1A020D1658800FFBB04 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -283,6 +285,8 @@
 				A94A590E20DA483B009A29E7 /* KKBannerCell.m */,
 				A94A591020DA500C009A29E7 /* KKTodayReommendCell.h */,
 				A94A591120DA500C009A29E7 /* KKTodayReommendCell.m */,
+				A94A591920DA6FF5009A29E7 /* KKRecommendComicCardCell.h */,
+				A94A591A20DA6FF5009A29E7 /* KKRecommendComicCardCell.m */,
 				A94A591620DA667F009A29E7 /* KKTitleSectionHeadReusableView.h */,
 				A94A591720DA667F009A29E7 /* KKTitleSectionHeadReusableView.m */,
 			);
@@ -320,7 +324,6 @@
 				A9B5AF4720D91323008904AA /* KKEmptySectionController.h */,
 				A9B5AF4820D91323008904AA /* KKEmptySectionController.m */,
 				A9B5AF4A20D91344008904AA /* KKHomeSectionControllerList.h */,
-				A94A590220DA0838009A29E7 /* KKHomeCellModelDataSource.h */,
 			);
 			path = SectionController;
 			sourceTree = "<group>";
@@ -452,6 +455,7 @@
 				A970030A20D275FA00DC30D3 /* KKMainTabBarController.m in Sources */,
 				A9B5AF1920D3CC2E008904AA /* KKHomeListModel.m in Sources */,
 				A9B5AF5020D926F4008904AA /* LVInfinitelyCycleCollectionCell.m in Sources */,
+				A94A591B20DA6FF5009A29E7 /* KKRecommendComicCardCell.m in Sources */,
 				A9B5AF1520D3CBCA008904AA /* TestDataSourceTool.m in Sources */,
 				A970030D20D2764B00DC30D3 /* KKControllerFactory.m in Sources */,
 				A9B5AF4920D91323008904AA /* KKEmptySectionController.m in Sources */,

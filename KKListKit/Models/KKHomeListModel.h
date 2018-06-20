@@ -48,6 +48,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, copy) NSString *update_day;
 @property (nonatomic, copy) NSArray <NSString *> *tags;
 @property (nonatomic, nullable) KKHomeItemLatestComicInfoModel *latest_comic_info;
+//预计算
+@property (nonatomic, copy) NSString *tagString;
 @end
 
 //Core Item Model
