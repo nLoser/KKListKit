@@ -65,7 +65,6 @@
 #pragma mark - IGListAdapterDataSource
 
 - (NSArray<id<IGListDiffable>> *)objectsForListAdapter:(IGListAdapter *)listAdapter {
-    NSLog(@"%@",self.datas);
     return self.datas;
 }
 
