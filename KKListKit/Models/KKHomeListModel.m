@@ -101,13 +101,13 @@
         }
             break;
         case kHomeStypleItemTypeHotRecommend: {
-            tempSectionController = [KKHotRecommendSectionController new];
+            //tempSectionController = [KKHotRecommendSectionController new];
+            //NOTE:测试
+            tempSectionController = [KKListRecommendSectionController new];
         }
             break;
         case kHomeStypleItemTypeNewRecommend: {
-            //tempSectionController = [KKNewRecommendSectionController new];
-            //NOTE:测试
-            tempSectionController = [KKListRecommendSectionController new];
+            tempSectionController = [KKNewRecommendSectionController new];
         }
             break;
         default:

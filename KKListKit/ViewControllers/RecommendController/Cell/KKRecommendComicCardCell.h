@@ -16,6 +16,8 @@
  */
 @interface KKRecommendNewComicCardCell : UICollectionViewCell
 
+@property (nonatomic, strong) KKHomeTopicModel *model;
+
 @end
 
 

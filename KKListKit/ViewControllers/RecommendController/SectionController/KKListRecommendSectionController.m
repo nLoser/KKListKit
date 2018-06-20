@@ -13,7 +13,7 @@
 #import "KKRecommendComicCardCell.h"
 #import "KKTitleSectionHeadReusableView.h"
 
-@interface KKListRecommendSectionController ()
+@interface KKListRecommendSectionController () <IGListSupplementaryViewSource>
 
 @property (nonatomic, strong) KKHomeModuleDataModel *model;
 
@@ -32,9 +32,24 @@
     self.inset = UIEdgeInsetsMake(10, 10, 12, 10);
     self.minimumLineSpacing = 14;
     self.minimumInteritemSpacing = 12;
+    self.supplementaryViewSource = self;
 }
 
 #pragma mark - IGListSupplementaryViewSource
+
+- (NSArray<NSString *> *)supportedElementKinds {
+    return @[UICollectionElementKindSectionHeader];
+}
+
+- (CGSize)sizeForSupplementaryViewOfKind:(NSString *)elementKind atIndex:(NSInteger)index {
+    return CGSizeMake([UIScreen mainScreen].bounds.size.width, 32 + 6); //64 + 12
+}
+
+- (UICollectionReusableView *)viewForSupplementaryElementOfKind:(NSString *)elementKind atIndex:(NSInteger)index {
+    KKTitleSectionHeadReusableView *view = [self.collectionContext dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader forSectionController:self class:[KKTitleSectionHeadReusableView class] atIndex:index];
+    view.title = self.model.title;
+    return view;
+}
 
 #pragma mark - DataSource
 

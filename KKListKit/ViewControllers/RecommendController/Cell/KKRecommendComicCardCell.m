@@ -10,7 +10,67 @@
 
 #import <YYKit/UIImageView+YYWebImage.h>
 
+@interface KKRecommendNewComicCardCell ()
+
+@property (nonatomic, strong) CAShapeLayer *backgroundLayer;
+@property (nonatomic, strong) UIImageView *comicImageView;
+@property (nonatomic, strong) UILabel *comicNameLabel;
+@property (nonatomic, strong) UILabel *tagsLabel;
+@property (nonatomic, strong) UILabel *updateInfoLabel;
+@property (nonatomic, strong) UIButton *subscribeButton;
+
+@end
+
 @implementation KKRecommendNewComicCardCell
+
+- (instancetype)initWithFrame:(CGRect)frame {
+    if (self = [super initWithFrame:frame]) {
+        [self.contentView.layer addSublayer:self.backgroundLayer];
+        [self.contentView addSubview:self.comicImageView];
+        [self.contentView addSubview:self.comicNameLabel];
+        [self.contentView addSubview:self.tagsLabel];
+        [self.contentView addSubview:self.updateInfoLabel];
+        [self.contentView addSubview:self.subscribeButton];
+    }
+    return self;
+}
+
+#pragma mark - Setter
+
+- (void)setModel:(KKHomeTopicModel *)model {
+    _model = model;
+    _comicNameLabel.text = model.title;
+    [_comicImageView setImageWithURL:[NSURL URLWithString:model.cover_image_url] options:YYWebImageOptionProgressive];
+}
+
+#pragma mark - Getter
+
+- (CAShapeLayer *)backgroundLayer {
+    if (!_backgroundLayer) {
+        UIBezierPath *bezierPath = [UIBezierPath bezierPathWithRoundedRect:self.bounds cornerRadius:8];
+        _backgroundLayer = [CAShapeLayer layer];
+        _backgroundLayer.fillColor = kLowerstColor.CGColor;
+        _backgroundLayer.path = bezierPath.CGPath;
+    }
+    return _backgroundLayer;
+}
+
+- (UIImageView *)comicImageView {
+    if (!_comicImageView) {
+        _comicImageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, self.lvWidth, self.lvHeight - 136/2.)];
+    }
+    return _comicImageView;
+}
+
+- (UILabel *)comicNameLabel {
+    if (!_comicNameLabel) {
+        _comicNameLabel = [[UILabel alloc] initWithFrame:CGRectMake(10, 0, self.lvWidth - 20, 16 + 2)];
+        _comicNameLabel.lvTop = _comicImageView.lvBottom + 8 - 1;
+        _comicNameLabel.textColor = kTextDarkColor;
+        _comicNameLabel.font = [UIFont systemFontOfSize:16];
+    }
+    return _comicNameLabel;
+}
 
 @end
 
