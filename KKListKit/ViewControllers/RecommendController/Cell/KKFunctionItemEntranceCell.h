@@ -7,8 +7,11 @@
 //  首页item功能入口
 
 #import <UIKit/UIKit.h>
-#import "KKHomeCellModelDataSource.h"
 
-@interface KKFunctionItemEntranceCell : UICollectionViewCell <KKHomeCellModelDataSource>
+#import "KKHomeListModel.h"
+
+@interface KKFunctionItemEntranceCell : UICollectionViewCell 
+
+- (void)updateToObject:(KKHomeBannerModel *)object;
 
 @end

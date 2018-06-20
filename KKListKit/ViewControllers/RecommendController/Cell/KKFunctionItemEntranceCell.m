@@ -7,7 +7,6 @@
 //
 
 #import "KKFunctionItemEntranceCell.h"
-#import "KKHomeListModel.h"
 
 #import <YYKit/UIImageView+YYWebImage.h>
 

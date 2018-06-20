@@ -13,6 +13,7 @@
 		A94A590920DA32BB009A29E7 /* KKDailyHorizontalListSectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = A94A590820DA32BB009A29E7 /* KKDailyHorizontalListSectionController.m */; };
 		A94A590C20DA33B5009A29E7 /* KKDailyHorizontailListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A94A590B20DA33B5009A29E7 /* KKDailyHorizontailListCell.m */; };
 		A94A590F20DA483B009A29E7 /* KKBannerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A94A590E20DA483B009A29E7 /* KKBannerCell.m */; };
+		A94A591220DA500C009A29E7 /* KKTodayReommendCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A94A591120DA500C009A29E7 /* KKTodayReommendCell.m */; };
 		A955F1A120D1658800FFBB04 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A955F1A020D1658800FFBB04 /* AppDelegate.m */; };
 		A955F1AC20D1658900FFBB04 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A955F1AA20D1658900FFBB04 /* LaunchScreen.storyboard */; };
 		A955F1AF20D1658900FFBB04 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A955F1AE20D1658900FFBB04 /* main.m */; };
@@ -55,6 +56,8 @@
 		A94A590B20DA33B5009A29E7 /* KKDailyHorizontailListCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KKDailyHorizontailListCell.m; sourceTree = "<group>"; };
 		A94A590D20DA483B009A29E7 /* KKBannerCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKBannerCell.h; sourceTree = "<group>"; };
 		A94A590E20DA483B009A29E7 /* KKBannerCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KKBannerCell.m; sourceTree = "<group>"; };
+		A94A591020DA500C009A29E7 /* KKTodayReommendCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKTodayReommendCell.h; sourceTree = "<group>"; };
+		A94A591120DA500C009A29E7 /* KKTodayReommendCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KKTodayReommendCell.m; sourceTree = "<group>"; };
 		A955F19C20D1658800FFBB04 /* KKListKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KKListKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A955F19F20D1658800FFBB04 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A955F1A020D1658800FFBB04 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -339,6 +342,8 @@
 				A94A590B20DA33B5009A29E7 /* KKDailyHorizontailListCell.m */,
 				A94A590D20DA483B009A29E7 /* KKBannerCell.h */,
 				A94A590E20DA483B009A29E7 /* KKBannerCell.m */,
+				A94A591020DA500C009A29E7 /* KKTodayReommendCell.h */,
+				A94A591120DA500C009A29E7 /* KKTodayReommendCell.m */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -494,6 +499,7 @@
 			files = (
 				A94A590920DA32BB009A29E7 /* KKDailyHorizontalListSectionController.m in Sources */,
 				A9B5AF1220D3CB98008904AA /* KKListAdaptor.m in Sources */,
+				A94A591220DA500C009A29E7 /* KKTodayReommendCell.m in Sources */,
 				A9B5AF4320D8F60B008904AA /* KKNewRecommendSectionController.m in Sources */,
 				A9B5AF5120D926F4008904AA /* LVInfinitelyCycleView.m in Sources */,
 				A9B5AF4020D8F5E5008904AA /* KKTodayReommendSectionController.m in Sources */,

@@ -34,7 +34,7 @@
 
 - (UICollectionViewCell *)cellForItemAtIndex:(NSInteger)index {
     UICollectionViewCell *cell = [self.collectionContext dequeueReusableCellOfClass:[UICollectionViewCell class]  forSectionController:self atIndex:index];
-    cell.backgroundColor = [UIColor whiteColor];
+    cell.backgroundColor = [UIColor grayColor];
     return cell;
 }
 

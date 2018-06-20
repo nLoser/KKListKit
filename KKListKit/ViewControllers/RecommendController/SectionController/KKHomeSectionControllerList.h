@@ -12,7 +12,7 @@
 #import "KKDailyRecommendSectionController.h"   ///< 近三天推荐
 #import "KKHotRecommendSectionController.h"     ///< 热门推荐
 #import "KKAISectionController.h"               ///< AI推荐
-#import "KKTodayReommendSectionController.h"    ///< 今日推荐
+#import "KKTodayReommendSectionController.h"    ///< 今日最热
 #import "KKNewRecommendSectionController.h"     ///< 新品推荐
 #import "KKListRecommendSectionController.h"    ///< 列表推进
 
@@ -22,7 +22,7 @@ typedef NS_ENUM(NSInteger, kHomeStypleItemType) {
     kHomeStypleItemTypeDailysRecommend      = 3, ///< 每日更新
     kHomeStypleItemTypeAIRecommend          = 4, ///< AI推荐（根据之前浏览记录推荐）
     kHomeStypleItemTypeNomalListRecommend   = 5, ///< XXX推荐列表
-    kHomeStypleItemTypeTodayReommend        = 6, ///< 今日最热
+    kHomeStypleItemTypeTodayReommend        = 6, ///< 今日最热（排行榜）
     kHomeStypleItemTypeHotRecommend         = 7, ///< 热门推荐
     kHomeStypleItemTypeNewRecommend         = 8  ///< 新作推荐
 };
